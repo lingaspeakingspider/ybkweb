@@ -1,0 +1,193 @@
+@font-face {
+    font-family: 'Eina Bold'; 
+    src: url('../fonts/eina-03-bold.ttf'); 
+} 
+
+@font-face {
+    font-family: 'Eina Regular'; 
+    src: url('../fonts/eina-03-regular.ttf'); 
+} 
+
+ 
+
+
+/* This part removes default styling of Chrome*/
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.home,
+.about,
+.competitions,
+.teams,
+.contact,
+.projects{
+    margin-top: 10px;
+    color: white;
+    font-family: 'Eina Bold';
+    display: inline-block;
+    margin-right: 20px;
+    background: none;
+    border: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    font-size:17px;
+    transition: color 0.15s;
+}
+
+
+.navigationbar-div{
+    background-color: #052b1894;
+    display: flex;
+    justify-content: center;
+}
+
+
+.home:hover,
+.about:hover,
+.competitions:hover,
+.teams:hover,
+.contact:hover,
+.projects:hover{
+    color: #048a44
+}
+
+.searchbar[type=text]{
+    margin-top: 26px;
+    color: white;
+    background-color: #036333;
+    border-radius: 20px;
+    width: 200px;
+    height: 25px;
+    border: none;
+    display: inline-block;
+}
+
+.searchbar[type=text]::placeholder{
+    color: white;
+    font-family: 'Eina Regular';
+}
+
+
+.language-btn{
+    margin-top: 26px;
+    padding-left: 9px;
+    padding-right: 9px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    margin-left: 30px;
+    border: none;
+    background-color: #048a44;
+    font-family: 'Eina Regular';
+    color: white;
+    transition: background-color 0.15s;
+    
+}
+
+.language-btn:hover{
+    background-color: #036333;
+}
+
+/* Until navigation bar*/
+
+
+.contact{
+    color: #048a44
+}
+
+.initial-view{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/penguin.jpg");
+    background-size:cover;
+    width: 100%;
+    padding-bottom: 600px;
+}
+
+.any-questions{
+    color:white;
+    margin-top: 30px;
+    font-family: 'Eina Bold';
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.general{
+    color:white;
+    font-family: 'Eina Bold';
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.general-line{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.general-infos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 600px;
+    height: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: fit-content;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 250px;
+    height: 200px;
+    margin-right:50px;
+    background-color: transparent;
+}
+
+.gnl-title{
+    font-family: 'Eina Bold';
+    color: white;
+    font-size: 30px;
+}
+
+.gnl-description{
+    font-family: 'Eina Regular';
+    color: white;
+    font-size: 15px;
+}
+
+.social-media-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: white;
+    
+}
+
+.fa{
+    color: white;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+}
