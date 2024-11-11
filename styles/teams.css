@@ -8,6 +8,7 @@
     src: url('../fonts/eina-03-regular.ttf'); 
 } 
 
+ 
 
 
 /* This part removes default styling of Chrome*/
@@ -94,12 +95,13 @@
 
 /* Until navigation bar*/
 
-.about{
+
+.teams{
     color: #048a44
 }
 
 .initial-view{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/ant.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/turtle.jpg");
     background-size:cover;
     width: 100%;
     padding-bottom: 300px;
@@ -115,96 +117,116 @@
     margin-top: 200px;
 }
 
-.our-target{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/bird.jpg");
-    background-size:cover;
-}
-
-.our-target-title{
-    background-color: rgba(5, 43, 24, 0.557);
-    color: white;
-    width: 50%;
-    padding: 150px;
-    text-align: center;
-    font-family: 'Eina Bold';
-    font-size: 60px;
-}
-
-.our-target-description{
-    background-color: rgba(3, 99, 51, 0.557);
-    color: white;
-    width: 50%;
-    padding: 150px;
-    text-align: center;
-    font-family: 'Eina Bold';
-    font-size: 20px;
-}
-
-.successes-title{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/success.jpg");
-    background-size:cover;
-    color: white;
-    font-family: 'Eina Bold';
-    font-size: 30px;
-    text-align: center;
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-}
-
-.successes-div{
+.administration{
     display: flex;
     justify-content: center;
     align-items: center; 
     width: 100%; 
-    height: 600px;
-    background-color: black;
+    height: 400px;
+    background-color: #04361d;
 }
 
-.teknofest-success{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/teknofest.png");
-    background-size:cover;
-    width: 33.3%; 
-    height: 600px; 
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-family: 'Eina Bold';
-    font-size: 30px;
+.admin-secretary{
+    margin-left: 10px;
 }
 
-.biogate-success{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/biogate.png");
-    background-size:cover;
-    width: 33.3%; 
-    height: 600px; 
-    text-align: center;
+.admin,
+.admin-secretary{
+    width: 20%;
+    height: 400px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    color: white;
-    font-family: 'Eina Bold';
-    font-size: 30px;
+    margin-right: 10px;
+    background-color: #036333;
+    flex-direction: column;
 }
 
-.tubitak-success{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tubutak.jpeg");
-    background-size:cover;
-    color: white;
-    width: 33.3%; 
-    height: 600px; 
+.member-avatar{
+    background-image: url("../images/turtle.jpg");
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    border-radius: 60px;
+}
+
+.member-text{
     text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+}
+
+.member-name{
+    font-family: 'Eina Bold';
     color: white;
+    font-size: 20px;
+}
+
+.member-responsibility{
+    font-family: 'Eina Regular';
+    color: white;
+    font-size: 17px;
+}
+
+.admin-team-title,
+.biocally-team-title,
+.advisor-team-title{
+    width: 100%;
+    height: 100px;
     font-family: 'Eina Bold';
     font-size: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.admin-team-title{
+    background-color: #048a44;
+}
+
+.biocally-team-title{
+    background-color: #020355;
+}
+
+.advisor-team-title{
+    background-color: #740000;
+}
+
+.biocally{
+    width: 30%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    background-color: #050797;
+    flex-direction: column;
+}
+
+.biocally-team{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100%; 
+    height: 400px;
+    background-color: #030527;
+}
+
+.advisor-team{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100%; 
+    height: 400px;
+    background-color: #270303;
+}
+
+.advisor{
+    width: 30%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    background-color: #7e0000;
+    flex-direction: column;
 }
