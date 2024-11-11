@@ -99,11 +99,12 @@
     color: #048a44
 }
 
+
 .initial-view{
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/bird2.jpg");
     background-size:cover;
     width: 100%;
-    padding-bottom: 300px;
+    height: 900px;
 }
 
 .initial-view-text{
@@ -113,7 +114,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 200px;
+    margin-top: 300px;
 }
 
 /* Teknofest 2023*/
@@ -181,7 +182,7 @@
     width: 50%; 
     height: 600px; 
     background: url("../images/biogate.png");
-    background-size:cover;
+    background-size: cover;
 }
 
 .biogate-div-text{
@@ -198,6 +199,8 @@
     height: 200px;
     font-family: 'Eina Bold';
     font-size: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
     color: white;    
     text-align: center;
     display: flex;
@@ -293,6 +296,7 @@
     display: flex;
     align-items: center;
     text-align: center;
+    
 }
 
 .teknofest-2024-ai-div-text-title{
@@ -301,6 +305,8 @@
     padding-left: 5px;
     padding-right: 5px;
     font-family: 'Eina Bold';
+    margin-left: 5px;
+    margin-right: 5px;
     font-size: 30px;
     color: white;    
     text-align: center;
@@ -317,6 +323,8 @@
     color: white;    
     text-align: center;
     display: flex;
+    margin-left: 5px;
+    margin-right: 5px;
     align-items: center;
     justify-content: center;
 }

@@ -92,7 +92,7 @@
 }
 
 .logo-div{
-    margin-top: 100px;
+    margin-top: 150px;
     max-width: fit-content;
     margin-left: auto;
     margin-right: auto;
@@ -101,7 +101,7 @@
 
 .initial-view{
     position: relative;
-    height: 690px;
+    height: 900px;
     width: 100%;
     left: 0px;
     right: 0px;
@@ -110,6 +110,9 @@
 }
 
 .home-aboutus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-left: 0px;
     margin-right: 0px;
     padding-bottom: 250px;
@@ -118,9 +121,7 @@
 
 .who-are-we{
     vertical-align: top;
-    margin-bottom: 0px;
-    margin-left: 200px;
-    margin-top: 250px;
+    margin-bottom: 0px;;
     display: inline-block;
     font-family: 'Eina Bold';
     font-size: 40px;
@@ -133,6 +134,7 @@
     display: inline-block;
     width: 500px;
     height: 200px;
+    margin-bottom: 60px;
 }
 
 .about-description{
@@ -403,3 +405,13 @@ hr{
     padding: 10px;
     text-align: center;
   }
+
+.green-boxes{
+    display: flex;
+    justify-content: center;
+}
+
+.social-media-contact{
+    display: flex;
+    justify-content: center;
+}
