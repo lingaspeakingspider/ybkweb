@@ -121,7 +121,7 @@
 
 .who-are-we{
     vertical-align: top;
-    margin-bottom: 0px;;
+    margin-bottom: 0px;
     display: inline-block;
     font-family: 'Eina Bold';
     font-size: 40px;
@@ -415,3 +415,10 @@ hr{
     display: flex;
     justify-content: center;
 }
+
+.signature{
+    color: white;
+    font-family: 'Eina Regular';
+    font-size: 10px;
+}
+
