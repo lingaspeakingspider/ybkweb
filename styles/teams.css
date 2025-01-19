@@ -176,6 +176,11 @@
 
 .admin-team-title,
 .biocally-team-title,
+.scientific-prep-team-title,
+.biyokimya-team-title,
+.deniz-team-title,
+.botanik-team-title,
+.ekoloji-team-title,
 .advisor-team-title{
     width: 100%;
     height: 100px;
@@ -198,6 +203,39 @@
 
 .advisor-team-title{
     background-color: #740000;
+}
+
+.scientific-prep-team-title{
+    background-color: #777e1f;
+}
+
+.scientific-prep{
+    width: 30%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    background-color: #919b0a;
+    flex-direction: column;
+}
+
+.scientific-prep-team{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100%; 
+    height: 400px;
+    background-color: #595f03;
+}
+
+.advisor{
+    width: 30%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    background-color: #7e0000;
+    flex-direction: column;
 }
 
 .biocally{
@@ -236,4 +274,96 @@
     margin-right: 10px;
     background-color: #7e0000;
     flex-direction: column;
+}
+
+.biyokimya-team-title{
+    background-color: #0c7726;
+}
+
+.biyokimya{
+    width: 30%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    background-color: #1b8d2a98;
+    flex-direction: column;
+}
+
+.biyokimya-team{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100%; 
+    height: 400px;
+    background-color: #095716;
+}
+
+.deniz-team-title{
+    background-color: #03857e;
+}
+
+.deniz{
+    width: 30%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    background-color: #04aca3;
+    flex-direction: column;
+}
+
+.deniz-team{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100%; 
+    height: 400px;
+    background-color: #025551;
+}
+
+.botanik-team-title{
+    background-color: #948606;
+}
+
+.botanik{
+    width: 30%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    background-color: #bdaa02;
+    flex-direction: column;
+}
+
+.botanik-team{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100%; 
+    height: 400px;
+    background-color: #685e03;
+}
+
+.ekoloji-team-title{
+    background-color: #020355;
+}
+
+.ekoloji{
+    width: 30%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    background-color: #050797;
+    flex-direction: column;
+}
+
+.ekoloji-team{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100%; 
+    height: 400px;
+    background-color: #030527;
 }
