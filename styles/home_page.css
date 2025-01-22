@@ -129,26 +129,43 @@
     background-color: white;
 }
 
+@keyframes up{
+    from {margin-top: 0px;}
+
+    to {margin-bottom: 150px;}
+}
+
+@keyframes down{
+    from {margin-top: 150px;}
+
+    to {margin-bottom: 0px;}
+}
+
 .who-are-we{
     vertical-align: top;
     margin-bottom: 0px;
     display: inline-block;
     font-family: 'Eina Bold';
     font-size: 40px;
+    animation: up 5s;  
+    animation-fill-mode: forwards;
     color: #036333;
 }
 
 .about-description-div{
     margin-left: 30px;
+    animation: up 3s;  
+    animation-fill-mode: forwards;
     margin-top: 250px;
     display: inline-block;
     width: 500px;
     height: 200px;
     margin-bottom: 60px;
+    animation: up 5s;  
+    animation-fill-mode: forwards;
 }
 
 .about-description{
-    margin-top: 5px;
     display: inline-block;
     font-family: 'Eina Regular';
     font-size: 20px;
@@ -164,7 +181,7 @@
     padding-top: 20px;
     padding-bottom: 20px; 
     display: block;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
     max-width: fit-content;
@@ -199,6 +216,7 @@
     color: white
 }
 
+
 .last-part-home{
     width: 100%;
     padding-bottom: 300px;
@@ -216,6 +234,8 @@
     padding-bottom: 50px;
     padding-top: 50px;
     background-color: #036333;
+    animation: up 5s;  
+    animation-fill-mode: forwards;
     text-align: center;
 }
 
@@ -260,6 +280,9 @@
     display: inline-block;
     margin-top: 50px;
     margin-left: 150px;
+    
+    animation: up 5s;  
+    animation-fill-mode: forwards;
     padding-left: 25px;
     padding-right: 25px;
     padding-bottom: 50px;
@@ -306,6 +329,9 @@
 .home-competitions{
     display: inline-block;
     margin-top: 50px;
+    
+    animation: up 5s;  
+    animation-fill-mode: forwards;
     margin-left: 170px;
     padding-left: 25px;
     padding-right: 25px;
