@@ -15,11 +15,12 @@
     </head>
     <body>
         <link rel="stylesheet", href="../../styles/home_page.css">
+        
         <div class="initial-view">
-            <div class="navigationbar-div">
-                <a href="../../index.html">
+            <div class="navigationbar-div" style="top:0;  position: fixed;background: black; width: 100%; height: 100px; display: flex; justify-content: center;">
+                <a href="index.html">
                     <button class="home">
-                        ANA SAYFA
+                        <img src="images/logo.png" style="height: 50px; width: 50px;">
                     </button>
                 </a>
     
@@ -46,19 +47,19 @@
                         PROJELER
                     </button>
                 </a>
-
+    
                 <a href="languages/tr/publications.html">
                     <button class="projects">
                         YAYINLAR
                     </button>
                 </a>
-
+    
                 <a href="languages/tr/announcements.html">
                     <button class="projects">
                         DUYURULAR
                     </button>
                 </a>
-
+    
                 <a href="languages/tr/calybd.html">
                     <button class="projects">
                         CALYBD
@@ -71,12 +72,19 @@
                     </button>
                 </a>
     
-                <input class="searchbar" type="text" placeholder="  Ara...">
+                <div style="margin-top: auto; margin-bottom: auto;">
+                    <input type="text" id="search" class="searchbar" placeholder="   Ara...">
+                    <div id="results" class="search-results"></div>
+                </div>
+                
                 <a href="languages/en/home_page.html">
                     <button class="language-btn">
                         English
                     </button>
                 </a>
+            </div>
+            <div style="width: 100%; height: 50px; background: transparent;">
+
             </div>
     
             <div class="logo-div">
