@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'Eina Bold'; 
+    src: url('../fonts/eina-03-bold.ttf'); 
+} 
+
+@font-face {
+    font-family: 'Eina Regular'; 
+    src: url('../fonts/eina-03-regular.ttf'); 
+} 
+
+body{
+    background: #fff;
+    height: 100vh;
+    background-image: linear-gradient(rgb(7, 70, 39) , rgb(16, 226, 117));
+}
+
+.article-div-title{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.article-div-title1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Eina Bold';
+    color:white;
+}
+
+.article-file{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 70px;
+    font-family: 'Eina Bold';
+    color: white
+}
+
+.article-div{
+    margin: auto;
+    width: 50%;
+    padding: 25vh 0;
+    text-align: center;
+    background-color: transparent;
+}
+
+.article-title{
+    font-family: 'Eina Bold';
+}
+
+.description{
+    font-family: 'Eina Bold';
+    color:white
+}
