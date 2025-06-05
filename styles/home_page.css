@@ -8,580 +8,439 @@
     src: url('../fonts/eina-03-regular.ttf'); 
 } 
 
+@font-face {
+    font-family: "Neue Haas Grotesk";
+    src: url("https://db.onlinewebfonts.com/t/0209bfe594ed24b75ee2aac06529e4f9.eot");
+    src: url("https://db.onlinewebfonts.com/t/0209bfe594ed24b75ee2aac06529e4f9.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/0209bfe594ed24b75ee2aac06529e4f9.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/0209bfe594ed24b75ee2aac06529e4f9.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/0209bfe594ed24b75ee2aac06529e4f9.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/0209bfe594ed24b75ee2aac06529e4f9.svg#Neue Haas Grotesk Display Pro 75 Bold")format("svg");
+}
+
 /* This part removes default styling of Chrome*/
+
 *{
     padding:0;
     margin:0;
     box-sizing: border-box;
 }
 
-<<<<<<< HEAD
-=======
-
-.home,
->>>>>>> 8937c2fa5a82cf6923dd243fb07672ead5c7d603
-.about,
-.competitions,
-.teams,
-.contact,
-.projects{
-    margin-top: 10px;
-    color: white;
-    font-family: 'Eina Bold';
-    margin-right: 20px;
-    background: none;
+.home{
     border: none;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 18px;
-    padding-bottom: 18px;
-    font-size:14px;
-    transition: color 0.15s;
-    padding-top: 20px;
+    background: transparent;
     margin-top: 20px;
     margin-bottom: auto;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .home:hover{
     cursor: pointer;
 }
 
-.home{
-    margin-top: 10px;
-    color: white;
-    font-family: 'Eina Bold';
-    margin-right: 20px;
-    background: none;
+/* Dropdown */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+    font-size: 16px;
     border: none;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 18px;
-    padding-bottom: 18px;
-    font-size:14px;
-    transition: color 0.15s;
-    padding-top: 20px;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background: transparent;
+    font-family: 'Eina Bold'; 
+    margin-top: 20px; 
 }
 
 
-
-.home:hover,
-.about:hover,
-.competitions:hover,
-.teams:hover,
-.contact:hover,
-.projects:hover{
-    color: #048a44;
+.navbar a:hover, .dropdown:hover .dropbtn {
     cursor: pointer;
+    color: gray;
 }
 
-
-.searchbar[type=text]{
-    color: white;
-    background-color: #035016;
-    border: none;
-    border-radius: 20px;
-    width: 200px;
-    height: 25px;
-}
-
-
-.search-button{
-    background-color: #08361f;
-    width: 25px;
-    height: 25px;
-    border: none;
-    color: white;
-    font-size: 12px;
-}
-
-.searchbar[type=text]::placeholder{
-    color: white;
-    font-family: 'Eina Regular';
-}
-
-.clubname{
-    font-family: 'Eina Bold';
-    font-size: 100px;
-    color:white;
-    max-width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.schoolname{
-    margin-top: 5px;
-    font-family: 'Eina Bold';
-    font-size: 20px;
-    color:white;
-    max-width: fit-content;
-    margin-left: auto;
-    margin-right: auto
-}
-
-.logo-div{
-    margin-top: 100px;
-    max-width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-.initial-view{
-    position: relative;
-    height: 900px;
-    width: 100%;
-    left: 0px;
-    right: 0px;
-    background: linear-gradient(rgba(0, 0, 0, 0.800), rgba(0, 0, 0, 0.800)), url("../images/ladybug.jpg");
-    background-size:cover;
-}
-
-.home-aboutus{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 0px;
-    margin-right: 0px;
-    padding-bottom: 250px;
-    background-color: white;
-}
-
-.who-are-we{
-    vertical-align: top;
-    margin-bottom: 0px;
-    display: inline-block;
-    font-family: 'Eina Bold';
-    font-size: 40px;
-    color: #036333;
-}
-
-.about-description-div{
-    margin-left: 30px;
-    margin-top: 250px;
-    display: inline-block;
-    width: 500px;
-    height: 200px;
-    margin-bottom: 60px;
-}
-
-.about-description{
-    margin-top: 5px;
-    display: inline-block;
-    font-family: 'Eina Regular';
-    font-size: 20px;
-    color: black;
-}
-
-.who-button{
-    background-color: #048a44;
-    color: black;
-    border: none;
-    padding-left: 120px;
-    padding-right: 120px;
-    padding-top: 20px;
-    padding-bottom: 20px; 
-    display: block;
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: fit-content;
-    font-family: 'Eina Regular';
-    font-size: 18px;
-    transition: background-color 0.15s, color 0.15s;
-}
-
-.language-btn{
-    margin-top: 35px;
-    padding-left: 9px;
-    padding-right: 9px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-radius: 5px;
-    border: none;
-    margin-left: 30px;
-    background-color: #034724;
-    font-family: 'Eina Regular';
-    color: white;
-    transition: background-color 0.15s;
-    
-}
-
-.language-btn:hover{
-    background-color: #036333;
-}
-
-
-.who-button:hover{
-    background-color: #036333;
-    color: white
-}
-
-.last-part-home{
-    width: 100%;
-    padding-bottom: 300px;
-    background: linear-gradient(rgba(0, 0, 0, 0.800), rgba(0, 0, 0, 0.8)), url("../images/frog.jpg");
-    background-size:cover;
-    position: relative;
-}
-
-.meet-with-team{
-    display: inline-block;
-    margin-top: 50px;
-    margin-left: 100px;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom: 50px;
-    padding-top: 50px;
-    background-color: #036333;
-    text-align: center;
-}
-
-.meet-with-club{
-    color: white;
-    font-size: 20px;
-    font-family: 'Eina Bold';
-    margin-bottom: 10px;
-}
-
-.meet-description{
-    color: white;
-    font-size: 14px;
-    display: flex;
-    justify-content: center;
-    font-family: 'Eina Regular';
-    width: 200px;
-    margin-top:10px;
-    margin-bottom: 20px;
-}
-
-.our-club:hover{
-    text-decoration: underline;
-    font-family: 'Eina Regular';
-}
-
-.our-club{
-    margin-top:20px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: fit-content;
-    color:white;
-    font-family: 'Eina Regular';   
-    text-decoration: none;
-}
-
-.our-club:hover{
-    color: white;
-}
-
-.home-projects{
-    display: inline-block;
-    margin-top: 50px;
-    margin-left: 150px;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom: 50px;
-    padding-top: 50px;
-    background-color: #036333;
-    text-align: center;
-}
-
-
-.see-our-projects{
-    color: white;
-    font-size: 20px;
-    font-family: 'Eina Bold';
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.check{
-    color: white;
-    font-size: 14px;
-    font-family: 'Eina Regular';
-    width: 200px;
-    margin-top:10px;
-    margin-bottom: 20px;
-}
-
-.take-look:hover{
-    color: white;
-    text-decoration: underline;
-    font-family: 'Eina Regular';
-}
-
-.take-look{
-    margin-top:20px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: fit-content;
-    color:white;
-    font-family: 'Eina Regular';
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.home-competitions{
-    display: inline-block;
-    margin-top: 50px;
-    margin-left: 170px;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom: 50px;
-    padding-top: 50px;
-    background-color: #036333;
-    text-align: center;
-}
-
-
-.competitions-title{
-    color: white;
-    font-size: 20px;
-    font-family: 'Eina Bold';
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.competitions-description{
-    color: white;
-    font-size: 14px;
-    font-family: 'Eina Regular';
-    width: 200px;
-    margin-top:10px;
-    margin-bottom: 20px;
-    
-}
-
-.competitions-more:hover{
-    text-decoration: underline;
-    font-family: 'Eina Regular';
-    color: white;
-}
-
-.direct{
-    color: white;
-    text-decoration: underline;
-}
-
-.competitions-more{
-    margin-top:20px;
-    margin-left: auto;
-    text-decoration: none;
-    margin-right: auto;
-    max-width: fit-content;
-    color:white;
-    font-family: 'Eina Regular';
-}
-
-.social-media{
-    display: inline-block;
-    margin-top: 50px;
-    margin-left: 180px;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom: 50px;
-    padding-top: 50px;
-    background-color: transparent;
-}
-
-.social-media-title{
-    color:white;
-    font-size: 30px;
-    text-align: center;
-    font-family: 'Eina Bold';
-}
-
-hr{
-    color: white;   
-}
-
-.fa{
-    padding: 20px;
-    margin-left: 20%;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-    color: white;
-}
-
-.contact-us{
-    display: inline-block;
-    margin-top: 50px;
-    margin-left: 180px;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom: 50px;
-    padding-top: 50px;
-    background-color: transparent;
-}
-
-.contact-us-title{
-    color:white;
-    font-size: 30px;
-    text-align: center;
-    font-family: 'Eina Bold';
-}
-
-.address{
-    color: white;
-    font-size: 15px;
-    font-family: 'Eina Regular';
-    margin-top: 6px;
-    margin-bottom: 3px;
-}
-
-.email{
-    color: white;
-    font-size: 15px;
-    font-family: 'Eina Regular';
-    margin-top: 6px;
-    margin-bottom: 3px;
-}
-
-.bottom-logo {
+/* Dropdown content (hidden by default) */
+.dropdown-content {
     position: absolute;
-    bottom: 0;            
-    left: 50%;            
-    transform: translateX(-50%); 
-    padding: 10px;
-    text-align: center;
-  }
-
-.green-boxes{
-    display: flex;
-    justify-content: center;
-}
-
-.social-media-contact{
-    display: flex;
-    justify-content: center;
-}
-
-.signature{
-    color: white;
-    font-family: 'Eina Regular';
-    font-size: 10px;
-}
-
-/* Menubar - Start */
-
-.menubar{
-    width: 100%;
-    height: 90px;
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    background:black;
-}
-
-.homepage-button-img{
-    width: 50px;
-    height: 50px;
-    background: transparent;
-}
-
-.homepage-button{
-    border: none;
-    background: transparent;
-    margin-top: 20px;
-    margin-bottom: auto;
-    margin-right: 10px;
-}
-
-.homepage-button:hover{
-    cursor:pointer;
-}
-
-.menubar-button,
-.current-menu-button{
+    background-color: white;
+    min-width: 160px;
     font-family: 'Eina Bold';
-    width: fit-content;
-    height: fit-content;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-top: 30px;
-    margin-bottom: auto;
-    margin-left: 15px;
-    font-size: 14.5px;
-    margin-right: 15px;
+    z-index: 1;
     border-radius: 5px;
-    padding-bottom: 5px;
+    display: none;
+    transform: scale(0.968756);
 }
 
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
 
-.current-menu-button{
-    background: white;
-    border: none;
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 .menubar-button{
-    color: white;
     border: none;
-    background: transparent;
-    transition: background-color 0.15s;
+    background-color: transparent;
+    margin-top: 22px;
+    margin-bottom: auto;
+    margin-left: 10px;
+    padding: 12px 16px;
+    color: white;
+    font-family: 'Eina Bold';
+    font-size: 16px;
+    z-index: 1;
 }
 
 .menubar-button:hover{
-    cursor: pointer;
+    color: gray;
+    cursor: pointer;;
 }
 
 .searchbar{
     margin-top: 35px;
     margin-bottom: auto;
-}
-
-.input-search::placeholder{
-    color: black;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 30px;
+    background: rgba(128, 128, 128, 0.644);
+    padding-left: 10px;
+    color: white;
     font-family: 'Eina Regular';
 }
 
-/* Menubar - Finish */
+.searchbar::placeholder{
+    color:white;
+}
 
-/* Dropdown Button */
-.dropbtn {
-    background-color: #3a3d3c;
-    color: white;
-    padding: 10px;
-    font-size: 14.5px;
+.sign-in{
     border: none;
-    border-radius: 30px;
-    font-family: 'Eina Bold';
-  }
-  
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
+    font-family: 'Eina Regular';
+    color: white;
+    background: transparent;
+    margin-top: 35px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+.sign-in:hover{
+    color: gray;
+}
+
+.sign-up{
+    border-color: white;
+    font-family: 'Eina Regular';
+    color: white;
+    background: transparent;
     margin-top: 25px;
-    margin-left: 10px;
+    border-radius: 6px;;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+    border-width: 0.2mm;
 }
 
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-    display: none;
+.sign-up:hover{
+    color: gray;
+    border-color: gray;
+}
+
+.mainpage{
+    width: 100%;
+    height: fit-content;
+    background-size: cover; 
+}
+
+.mainpage video{
+    object-fit: cover;
+}
+
+.logo{
+    width: 200px; 
+    height: 200px; 
+    margin-top: 150px;
+}
+
+.myVideo{
     position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
-/* Links inside the dropdown */
-.dropdown-content a {
-color: black;
-padding: 12px 16px;
-text-decoration: none;
-display: block;
+@media (max-aspect-ratio: 16/9){
+    .myVideo{
+        width: 100%;
+        height: auto;
+    }
 }
 
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
+@media (max-aspect-ratio: 16/9){
+    .myVideo{
+        width: auto;
+        height: 100%;
+    }
+}
 
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color:  #272928;}
-
-.dropdown-option{
+.clubname,
+.logo-div,
+.schoolname{
     font-family: 'Eina Bold';
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    max-width: fit-content;
+
+    opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+}
+
+.clubname{
+    font-size: 90px;
+}
+
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.description{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: fit-content;
+    color: white;
+    padding: 50px; 
+}
+
+.title-desc{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: fit-content;
+    padding-top: 150px;
+}
+
+@keyframes appear {
+    from {
+      opacity: 0;
+      clip-path: inset(100% 100% 0 0);
+    }
+    to {
+      opacity: 1;
+      clip-path: inset(0 0 0 0);
+    }
+  }
+
+@keyframes fade-in{
+    from{ scale: .8; opacity: 0}
+    to {scale:1; opacity: 1;}
+}
+
+#fadein {
+    animation: fade-in linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+#block {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+  }
+
+.about-btn{
+    background-color: #048a44;
+    color: black;
+    border: none;
+    padding-left: 70px;
+    padding-right: 80px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: fit-content;
+    font-family: 'Eina Regular';
+    font-size: 17px;
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.15s, color 0.15s;
+}
+
+
+.about-btn:hover{
+    background: rgb(2, 68, 2);
+    cursor: pointer;
+    color: white;
+}
+
+.third-page{
+    justify-content: center;
+}
+
+.mini-box{
+    background-color: #048a44;
+    width: 300px;
+    margin: 30px;
+    margin-top: 200px;
+    height: 300px;
+    border: none;
+    transition: transform .2s;
+    z-index: -2;
+}
+
+.mini-box:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.mini-box-title{
+    color: white;
+    font-size: 20px;
+    font-family: 'Eina Bold';
+    margin-left: auto;
+    margin-right: auto;
+    max-width: fit-content;
+    padding-top: 5%;
+}
+
+.mini-box-desc{
+    color: white;
+    font-size: 15px;
+    font-family: 'Eina Bold';
+    margin-left: auto;
+    margin-right: auto;
+    max-width: fit-content;
+    margin-top: 10%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.social-media{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: fit-content;
+    font-family: 'Eina Bold';
+    font-size: 30px;
+}
+
+.social-media-button{
+    width: 40px;
+    height: 40px;
+    border-width: 0.2mm;
+    background: transparent;
+    border-radius: 6px;
+    border-color: white;
+    color: white;
+    transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+}
+
+.social-media-button:hover{
+    color: black;
+    border-color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+
+/**/
+
+* { box-sizing: border-box; }
+body {
+  font: 16px Arial;
+}
+.autocomplete {
+  /*the container must be positioned relative:*/
+  position: relative;
+  display: inline-block;
+}
+input {
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding-right: 10px;
+  font-size: 16px;
+}
+
+input[type=text] {
+  background-color: grey;
+  width: 100%;
+}
+
+input[type=submit] {
+  background-color: transparent;
+  color: #fff;
+}
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid grey;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  font-family: 'Eina Regular';
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: white;
+  border-bottom: 1px solid #d4d4d4;
+}
+.autocomplete-items div:hover {
+  /*when hovering an item:*/
+  background-color: #e9e9e9;
+}
+
+.autocomplete-active {
+  /*when navigating through the items using the arrow keys:*/
+  background-color: rgb(1, 77, 48) !important;
+  color: #ffffff;
+
+}
+
+.search-button{
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 17px;
+}
+
+.search-button:hover{
+    cursor: pointer;
 }

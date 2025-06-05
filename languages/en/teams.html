@@ -1,233 +1,148 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Teams | CALYBK</title>
+
+        <title> Teams | CALYBK </title>
         <link rel="icon" type="image/x-icon" href="../../images/logo.ico">
-        <meta name="keywords" content="calybk, ybk, CALYBK, YBK, yaşam bilimleri, Cağaloğlu Anadolu Lisesi, cağaloğlu anadolu lisesi, cağaloğlu, Cağaloğlu">
-        <meta name="description" content="Cağaloğlu Anadolu Lisesi Yaşam Bilimleri Kulübü İnternet Sitesi">
-        <meta name="author" content="Oğuz Kağan Varol">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     </head>
     <body>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
         <link rel="stylesheet" href="../../styles/teams.css">
-        <div class="initial-view">
-            <div class="navigationbar-div">
-                <a href="../en/home_page.html">
+
+        <div class="navigationbar-div" id="mainmenubar" style="top:0; position: fixed;background: transparent; width: 100%; height: 90px; display: flex; justify-content: center; z-index: 1;">
+            <div style="width: 50%; height: 90px; background: transparent; justify-content: left; display: flex;">
+                <a href="../../languages/en/home_page.html">
                     <button class="home">
-                        HOME
+                        <img src="../../images/logo.png" style="height: 50px; width: 50px;">
                     </button>
                 </a>
     
-                <a href="../en/about.html">
-                    <button class="about">
-                        ABOUT
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        About
+                        <i class="bi bi-chevron-down"></i>
                     </button>
-                </a>
+                    <div class="dropdown-content">
+                      <a href="about.html">About CALYBK</a>
+                      <a href="teams.html">Teams</a>
+                      <a href="competitions.html">Competitions</a>
+                      <a href="projects.html">Projects</a>
+                    </div>
+                </div>
     
-                <a href="../en/competitions.html">
-                    <button class="competitions">
-                        COMPETITIONS
+    
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        Publications
+                        <i class="bi bi-chevron-down"></i>
                     </button>
-                </a>
+                    <div class="dropdown-content">
+                      <a href="publications.html">Publications</a>
+                      <a href="announcements.html">Announcements</a>
+                      <a href="calybd.html">CALYBD</a>
+                    </div>
+                </div>
     
-                <a href="../en/teams.html">
-                    <button class="teams">
-                        TEAMS
+                <a href="contact.html">
+                   <button class="menubar-button">
+                        Contact
+                   </button> 
+                </a>
+
+                <a href="sponsor.html">
+                    <button class="menubar-button">
+                        Sponsorship
+                    </button> 
+                </a>
+
+                <a href="apply.html">
+                    <button class="menubar-button">
+                        Apply
+                    </button> 
+                </a>
+
+            </div>
+
+            <div style="width: 50%; height: 90px; background: transparent; justify-content: right; display: flex;">
+
+                <form onsubmit="goToSection(); return false;" autocomplete="off">
+                    <div class="autocomplete" style="width:300px;">
+                        <input id="keyword" class="searchbar" type="text" name="keyword" placeholder="Search...">
+                    </div>
+
+                    <button type="submit" class="search-button">
+                        <i class="bi bi-search"></i>
                     </button>
-                </a>
-    
-                <a href="../en/projects.html">
-                    <button class="projects">
-                        PROJECTS
+                </form>
+
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        Translate
+                        <i class="bi bi-translate"></i>
                     </button>
-                </a>
+                    <div class="dropdown-content">
+                      <a href="../tr/teams.html">Türkçe</a>
+                      <a href="../en/teams.html">English</a>
+                      <a href="../de/teams.html">Deutsch</a>
+                    </div>
+                </div>
+            </div>
+
+    </div>
     
-                <a href="../en/contact.html">
-                    <button class="contact">
-                        CONTACT
+    <div class="timeline" style="background: linear-gradient(rgba(0, 0, 0, 0.600), rgba(0, 0, 0, 0.800)), url('../../images/norway.jpg');">
+        
+        <div style="width: 100%; height: 100px">
+
+        </div>
+        
+        <div class="container left">
+        
+            <a href="../../teams/en/admin.html" style="text-decoration: none;">
+                <button class="content">
+                    <h2 class="competition-success">Executive Team </h2>
                     </button>
-                </a>
-    
-                <input class="searchbar" type="text" placeholder="  Search...">
-                <a href="../tr/teams.html">
-                    <button class="language-btn">
-                        Türkçe
+            </a>
+        </div>
+        <div class="container right">
+            <a href="../../teams/en/pr_team.html" style="text-decoration: none;">
+                <button class="content">
+                    <h2 class="competition-success">PR Team </h2>
                     </button>
+            </a>
+        </div>
+        <div class="container left">
+            <div class="content">
+                <a href="../../teams/en/it_team.html" style="text-decoration: none;">
+                    <button class="content">
+                        <h2 class="competition-success">IT Team </h2>
+                        </button>
                 </a>
-                
-            </div>
-            <p class="initial-view-text">
-                TEAMS
-            </p>
-        </div>
-
-        <div class="admin-team-title">
-            ADMINISTRATION 
-        </div>
-
-        <div class="administration">
-            <div class="admin-secretary">
-                <div class="member-avatar">
-
-                </div>
-                
-                <div class="member-text">
-                    <div class="member-name">
-                        Mert Daniel Önal
-                    </div>
-    
-                    <div class="member-responsibility">
-                        Secretary General / Organization Department Leader
-                    </div>
-                </div>
-                
-            </div>
-
-            <div class="admin">
-                <div class="member-avatar">
-
-                </div>
-                
-                <div class="member-text">
-                    <div class="member-name">
-                        Oğuz Kağan Varol
-                    </div>
-    
-                    <div class="member-responsibility">
-                        Project Department Leader
-                    </div>
-                </div>
-                
-            </div>
-
-            <div class="admin">
-                <div class="member-avatar">
-
-                </div>
-                
-                <div class="member-text">
-                    <div class="member-name">
-                        Emir Acar
-                    </div>
-    
-                    <div class="member-responsibility">
-                        PR Department Leader
-                    </div>
-                </div>
-                
-            </div>
-
-            <div class="admin">
-                <div class="member-avatar">
-
-                </div>
-                
-                <div class="member-text">
-                    <div class="member-name">
-                        Mualla Aşık
-                    </div>
-    
-                    <div class="member-responsibility">
-                        Scientific Preparation Department Leader
-                    </div>
-                </div>
-                
-            </div>
-
-            <div class="admin">
-                <div class="member-avatar">
-
-                </div>
-                
-                <div class="member-text">
-                    <div class="member-name">
-                        Eylül Çakan
-                    </div>
-    
-                    <div class="member-responsibility">
-                        IT Department Leader
-                    </div>
-                </div>
-                
             </div>
         </div>
 
-        <div class="biocally-team-title">
-            BIOINFORMATICS TEAM (BIOCALLY)
-        </div>
-        <div class="biocally-team">
-            <div class="biocally">
-                <div class="member-avatar">
-    
-                </div>
-                
-                <div class="member-text">
-                    <div class="member-name">
-                        Utku Evkaya
-                    </div>
-    
-                    <div class="member-responsibility">
-                        Team Leader
-                    </div>
-                </div>
-            </div>
-    
-            <div class="biocally">
-                <div class="member-avatar">
-    
-                </div>
-                
-                <div class="member-text">
-                    <div class="member-name">
-                        Defne Şevval Şahin
-                    </div>
-    
-                    <div class="member-responsibility">
-                        Biology Division Leader
-                    </div>
-    
-                </div>
-            </div>
-    
-            <div class="biocally">
-                <div class="member-avatar">
-    
-                </div>
-                
-                <div class="member-text">
-                    <div class="member-name">
-                        Ceyran Karakoç
-                    </div>
-    
-                    <div class="member-responsibility">
-                        Software Division Leader
-                    </div>
-    
-                </div>
+        <div class="container right">
+            <div class="content">
+                <a href="../../teams/en/project_team.html" style="text-decoration: none;">
+                    <button class="content">
+                        <h2 class="competition-success">Project Teams </h2>
+                        </button>
+                </a>
             </div>
         </div>
 
-        <div class="advisor-team-title">
-            ADVISOR
-        </div>
-
-        <div class="advisor-team">
-            <div class="advisor">
-                <div class="member-avatar">
-    
-                </div>
-                
-                <div class="member-text">
-                    <div class="member-name">
-                        Gökhan Gündüz
-                    </div>
-    
-                    <div class="member-responsibility">
-                        Club Advisor
-                    </div>
-    
-                </div>
+        <div class="container left">
+            <div class="content">
+                <a href="../../teams/en/scientific_prep.html" style="text-decoration: none;">
+                    <button class="content">
+                        <h2 class="competition-success">Scientific Preparation Team </h2>
+                        </button>
+                </a>
             </div>
         </div>
+    </div>
+<script src="../../autocomplete_javascript/en/autocomplete.js"></script>
+<script src="../../autocomplete_javascript/en/navigate_to_file.js"></script>
     </body>
 </html>

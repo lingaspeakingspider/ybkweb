@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Sponsorluk | CALYBK </title>
+  <link rel="icon" type="image/x-icon" href="../../images/logo.ico">
+
+</head>
+
+<body style="
+    background-image: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)), url('../../images/sponsor.jpg');
+    background-size: cover; align-items: center; position: relative;
+  height: 100%;">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <div class="navigationbar-div" id="mainmenubar"
+    style="top:0; position: fixed;background: transparent; width: 100%; height: 90px; display: flex; justify-content: center; z-index: 1;">
+    <div style="width: 50%; height: 90px; background: transparent; justify-content: left; display: flex;">
+      <a href="../../index.html">
+        <button class="home">
+          <img src="../../images/logo.png" style="height: 50px; width: 50px;">
+        </button>
+      </a>
+
+      <div class="dropdown">
+        <button class="dropbtn">
+          Hakkında
+          <i class="bi bi-chevron-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="about.html">CALYBK Hakkında</a>
+          <a href="teams.html">Takımlar</a>
+          <a href="competitions.html">Yarışmalar</a>
+          <a href="projects.html">Projeler</a>
+        </div>
+      </div>
+
+
+      <div class="dropdown">
+        <button class="dropbtn">
+          Yayınlar
+          <i class="bi bi-chevron-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="publications.html">Yayınlar</a>
+          <a href="announcements.html">Duyurular</a>
+          <a href="calybd.html">CALYBD</a>
+        </div>
+      </div>
+
+      <a href="contact.html">
+        <button class="menubar-button">
+          İletişim
+        </button>
+      </a>
+
+      <a href="sponsor.html">
+        <button class="menubar-button">
+          Sponsorluk
+        </button>
+      </a>
+
+      <a href="apply.html">
+        <button class="menubar-button">
+          Başvur
+        </button>
+      </a>
+
+    </div>
+
+    <div style="width: 50%; height: 90px; background: transparent; justify-content: right; display: flex;">
+
+      <form onsubmit="goToSection(); return false;" autocomplete="off">
+        <div class="autocomplete" style="width:300px;">
+          <input id="keyword" class="searchbar" type="text" name="keyword" placeholder="Ara...">
+        </div>
+
+        <button type="submit" class="search-button">
+          <i class="bi bi-search"></i>
+        </button>
+      </form>
+
+      <div class="dropdown">
+        <button class="dropbtn">
+          Çevir
+          <i class="bi bi-translate"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="../tr/sponsor.html">Türkçe</a>
+          <a href="../en/sponsor.html">English</a>
+          <a href="../de/sponsor.html">Deutsch</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top:130px">
+
+  </div>
+
+  <div class="sponsor-title"> DESTEK PAKETLERİMİZ </div>
+  <div class="sponsor">
+    Sizin sponsorluğunuzla birlikte takımımız uluslararası yüksek prestijli bir yarışmada ülkemizi temsil etmenin gururu
+    ile mutlu olacaktır, Ayrıca firmanız dünyaca ünlü pek çok şirketin arasında takımımız tarafından temsil edilecektir.
+    Sponsorluk paketleri nakdi olarak karşılanabileceği gibi teknik malzeme, teçhizat, ulaşım, giyim veya karşılıklı
+    anlaşılacak herhangi bir destek şeklinde de olabilir.
+  </div>
+
+  <div class="sponsor-title"> İHTİYAÇLARIMIZ </div>
+
+  <div class="requirements-div">
+
+    <div class="requirement">
+      <div class="requirement-title">
+        Proje Geliştirme
+      </div>
+
+      <div class="requirement-subtitle">
+        <p class="require"> Yazılım Lisansları</p>
+        <p class="require"> Donanım Bileşenleri</p>
+        <p class="require"> Laboratuvar malzemeleri</p>
+        <p class="require"> Etkileşimli deney ortamları </p>
+      </div>
+    </div>
+
+    <div class="requirement">
+      <div class="requirement-title">
+        Organizasyon
+      </div>
+
+      <div class="requirement-subtitle">
+        <p class="require"> Kiralama Hizmetleri</p>
+        <p class="require"> Lojistik Destek</p>
+        <p class="require"> Lisans Ödemeleri</p>
+      </div>
+    </div>
+
+    <div class="requirement">
+      <div class="requirement-title">
+        Lojistik
+      </div>
+
+      <div class="requirement-subtitle">
+        <p class="require"> Yemek Sponsorluğu</p>
+        <p class="require"> Atıştırmalık Sponsorluğu</p>
+        <p class="require"> Giyim Desteği</p>
+      </div>
+    </div>
+
+  </div>
+
+  <link rel="stylesheet" href="../../styles/sponsor.css">
+</body>
+
+<script src="../../autocomplete_javascript/tr/autocomplete.js"></script>
+<script src="../../autocomplete_javascript/tr/navigate_to_file.js"></script>
+
+</html>

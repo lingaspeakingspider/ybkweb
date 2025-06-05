@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title> Teams | CALYBK </title>
+    <link rel="icon" type="image/x-icon" href="../../images/logo.ico">
+
+</head>
+
+<body>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../styles/teams.css">
+
+    <div class="navigationbar-div" id="mainmenubar"
+        style="top:0; position: fixed;background: transparent; width: 100%; height: 90px; display: flex; justify-content: center; z-index: 1;">
+        <div style="width: 50%; height: 90px; background: transparent; justify-content: left; display: flex;">
+            <a href="../../index.html">
+                <button class="home">
+                    <img src="../../images/logo.png" style="height: 50px; width: 50px;">
+                </button>
+            </a>
+
+            <div class="dropdown">
+                <button class="dropbtn">
+                    Über
+                    <i class="bi bi-chevron-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="about.html">Über CALYBK</a>
+                    <a href="teams.html">Teams</a>
+                    <a href="competitions.html">Wettbewerben</a>
+                    <a href="projects.html">Projekte</a>
+                </div>
+            </div>
+
+
+            <div class="dropdown">
+                <button class="dropbtn">
+                    Veröffentlichungen
+                    <i class="bi bi-chevron-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="publications.html">Veröffentlichungen</a>
+                    <a href="announcements.html">Ankündigungen</a>
+                    <a href="calybd.html">CALYBD</a>
+                </div>
+            </div>
+
+            <a href="contact.html">
+                <button class="menubar-button">
+                    Kontakt
+                </button>
+            </a>
+
+            <a href="sponsor.html">
+                <button class="menubar-button">
+                    Partnerschaft
+                </button>
+            </a>
+
+            <a href="apply.html">
+                <button class="menubar-button">
+                    Bewerben
+                </button>
+            </a>
+
+        </div>
+
+        <div style="width: 50%; height: 90px; background: transparent; justify-content: right; display: flex;">
+
+            <form onsubmit="goToSection(); return false;" autocomplete="off">
+                <div class="autocomplete" style="width:300px;">
+                    <input id="keyword" class="searchbar" type="text" name="keyword" placeholder="Suche...">
+                </div>
+
+                <button type="submit" class="search-button">
+                    <i class="bi bi-search"></i>
+                </button>
+            </form>
+
+
+            <div class="dropdown">
+                <button class="dropbtn">
+                    Übersetzen
+                    <i class="bi bi-translate"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="../tr/teams.html">Türkçe</a>
+                    <a href="../en/teams.html">English</a>
+                    <a href="../de/teams.html">Deutsch</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="timeline"
+        style="background: linear-gradient(rgba(0, 0, 0, 0.600), rgba(0, 0, 0, 0.800)), url('../../images/norway.jpg');">
+
+        <div style="width: 100%; height: 100px">
+
+        </div>
+
+        <div class="container left">
+
+            <a href="../../teams/de/admin.html" style="text-decoration: none;">
+                <button class="content">
+                    <h2 class="competition-success"> Führungsteam </h2>
+                </button>
+            </a>
+        </div>
+        <div class="container right">
+            <a href="../../teams/de/pr_team.html" style="text-decoration: none;">
+                <button class="content">
+                    <h2 class="competition-success">PR-Team </h2>
+                </button>
+            </a>
+        </div>
+        <div class="container left">
+            <div class="content">
+                <a href="../../teams/de/it_team.html" style="text-decoration: none;">
+                    <button class="content">
+                        <h2 class="competition-success">IT-Team </h2>
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <div class="container right">
+            <div class="content">
+                <a href="../../teams/de/project_team.html" style="text-decoration: none;">
+                    <button class="content">
+                        <h2 class="competition-success">Projektteams </h2>
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <div class="container left">
+            <div class="content">
+                <a href="../../teams/de/scientific_prep.html" style="text-decoration: none;">
+                    <button class="content">
+                        <h2 class="competition-success">Wissenschaftliches Vorbereitungsteam </h2>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../autocomplete_javascript/de/autocomplete.js"></script>
+    <script src="../../autocomplete_javascript/de/navigate_to_file.js"></script>
+</body>
+
+</html>

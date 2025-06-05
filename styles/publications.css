@@ -1,0 +1,288 @@
+@font-face {
+    font-family: 'Eina Bold'; 
+    src: url('../fonts/eina-03-bold.ttf'); 
+} 
+
+@font-face {
+    font-family: 'Eina Regular'; 
+    src: url('../fonts/eina-03-regular.ttf'); 
+} 
+
+@font-face {
+    font-family: "Neue Haas Grotesk";
+    src: url("https://db.onlinewebfonts.com/t/0209bfe594ed24b75ee2aac06529e4f9.eot");
+    src: url("https://db.onlinewebfonts.com/t/0209bfe594ed24b75ee2aac06529e4f9.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/0209bfe594ed24b75ee2aac06529e4f9.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/0209bfe594ed24b75ee2aac06529e4f9.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/0209bfe594ed24b75ee2aac06529e4f9.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/0209bfe594ed24b75ee2aac06529e4f9.svg#Neue Haas Grotesk Display Pro 75 Bold")format("svg");
+}
+
+/* This part removes default styling of Chrome*/
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.home{
+    border: none;
+    background: transparent;
+    margin-top: 20px;
+    margin-bottom: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.home:hover{
+    cursor: pointer;
+}
+
+/* Dropdown */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background: transparent;
+    font-family: 'Eina Bold'; 
+    margin-top: 20px; 
+}
+
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    cursor: pointer;
+    color: gray;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    font-family: 'Eina Bold';
+    z-index: 1;
+    border-radius: 5px;
+    display: none;
+    transform: scale(0.968756);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.menubar-button{
+    border: none;
+    background-color: transparent;
+    margin-top: 22px;
+    margin-bottom: auto;
+    margin-left: 10px;
+    padding: 12px 16px;
+    color: white;
+    font-family: 'Eina Bold';
+    font-size: 16px;
+    z-index: 1;
+}
+
+.menubar-button:hover{
+    color: gray;
+    cursor: pointer;;
+}
+
+.searchbar{
+    margin-top: 35px;
+    margin-bottom: auto;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 30px;
+    background: rgba(128, 128, 128, 0.644);
+    padding-left: 10px;
+    color: white;
+    font-family: 'Eina Regular';
+}
+
+.searchbar::placeholder{
+    color:white;
+}
+
+.sign-in{
+    border: none;
+    font-family: 'Eina Regular';
+    color: white;
+    background: transparent;
+    margin-top: 35px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+.sign-in:hover{
+    color: gray;
+}
+
+.sign-up{
+    border-color: white;
+    font-family: 'Eina Regular';
+    color: white;
+    background: transparent;
+    margin-top: 25px;
+    border-radius: 6px;;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+    border-width: 0.2mm;
+}
+
+.sign-up:hover{
+    color: gray;
+    border-color: gray;
+}
+
+.publication{
+    border: none; background: transparent;
+    margin-left: 20px;
+    transition: transform 0.5s ;
+}
+
+.publication:hover{
+    transform: scale(0.9);
+}
+
+.row{
+    justify-content: center;
+    display:flex;
+    padding-top: 20px;
+}
+
+.pdf-preview {
+    width: 400px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-family: 'Eina Bold';
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.pdf-preview img {
+    width: 100%;
+    display: block;
+}
+
+.pdf-info {
+    padding: 10px;
+    background-color: black;
+}
+
+.pdf-info .title {
+    font-weight: bold;
+    font-size: 0.95em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.pdf-info .details {
+    font-size: 0.85em;
+    color: #ccc;
+    margin-top: 5px;
+}
+
+/**/
+
+* { box-sizing: border-box; }
+body {
+  font: 16px Arial;
+}
+.autocomplete {
+  /*the container must be positioned relative:*/
+  position: relative;
+  display: inline-block;
+}
+input {
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding-right: 10px;
+  font-size: 16px;
+}
+
+input[type=text] {
+  background-color: grey;
+  width: 100%;
+}
+
+input[type=submit] {
+  background-color: transparent;
+  color: #fff;
+}
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid grey;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  font-family: 'Eina Regular';
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: white;
+  border-bottom: 1px solid #d4d4d4;
+}
+.autocomplete-items div:hover {
+  /*when hovering an item:*/
+  background-color: #e9e9e9;
+}
+
+.autocomplete-active {
+  /*when navigating through the items using the arrow keys:*/
+  background-color: rgb(1, 77, 48) !important;
+  color: #ffffff;
+
+}
+
+.search-button{
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 17px;
+}
+
+.search-button:hover{
+    cursor: pointer;
+}

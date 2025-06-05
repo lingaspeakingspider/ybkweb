@@ -1,134 +1,212 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Hakkında | CALYBK</title>
-        <link rel="icon" type="image/x-icon" href="../../images/logo.ico">
-        <meta name="keywords" content="calybk, ybk, CALYBK, YBK, yaşam bilimleri, Cağaloğlu Anadolu Lisesi, cağaloğlu anadolu lisesi, cağaloğlu, Cağaloğlu">
-        <meta name="description" content="Cağaloğlu Anadolu Lisesi Yaşam Bilimleri Kulübü İnternet Sitesi">
-        <meta name="author" content="Oğuz Kağan Varol">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <link rel="stylesheet", href="../../styles/about.css">
-        <div class="initial-view">
-            <div class="navigationbar-div">
+
+<head>
+
+    <title> Hakkında | CALYBK </title>
+    <link rel="icon" type="image/x-icon" href="../../images/logo.ico">
+
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../styles/about.css">
+
+    <div>
+
+        <div class="navigationbar-div" id="mainmenubar"
+            style="top:0; position: fixed;background: transparent; width: 100%; height: 90px; display: flex; justify-content: center; z-index: 1;">
+            <div style="width: 50%; height: 90px; background: transparent; justify-content: left; display: flex;">
                 <a href="../../index.html">
                     <button class="home">
-                        ANA SAYFA
-                    </button>
-                </a>
-    
-                <a href="../tr/about.html">
-                    <button class="about">
-                        HAKKINDA
-                    </button>
-                </a>
-    
-                <a href="../tr/competitions.html">
-                    <button class="competitions">
-                        YARIŞMALAR
-                    </button>
-                </a>
-    
-                <a href="../tr/teams.html">
-                    <button class="teams">
-                        TAKIMLAR
-                    </button>
-                </a>
-    
-                <a href="../tr/projects.html">
-                    <button class="projects">
-                        PROJELER
+                        <img src="../../images/logo.png" style="height: 50px; width: 50px;">
                     </button>
                 </a>
 
-                <a href="languages/tr/publications.html">
-                    <button class="projects">
-                        YAYINLAR
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        Hakkında
+                        <i class="bi bi-chevron-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="about.html">CALYBK Hakkında</a>
+                        <a href="teams.html">Takımlar</a>
+                        <a href="competitions.html">Yarışmalar</a>
+                        <a href="projects.html">Projeler</a>
+                    </div>
+                </div>
+
+
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        Yayınlar
+                        <i class="bi bi-chevron-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="publications.html">Yayınlar</a>
+                        <a href="announcements.html">Duyurular</a>
+                        <a href="calybd.html">CALYBD</a>
+                    </div>
+                </div>
+
+                <a href="contact.html">
+                    <button class="menubar-button">
+                        İletişim
                     </button>
                 </a>
 
-                <a href="languages/tr/announcements.html">
-                    <button class="projects">
-                        DUYURULAR
+                <a href="sponsor.html">
+                    <button class="menubar-button">
+                        Sponsorluk
                     </button>
                 </a>
 
-                <a href="languages/tr/calybd.html">
-                    <button class="projects">
-                        CALYBD
-                    </button>
-                </a>
-    
-                <a href="../tr/contact.html">
-                    <button class="contact">
-                        İLETİŞİM
-                    </button>
-                </a>
-    
-                <input class="searchbar" type="text" placeholder="  Ara...">
-                <a href="../en/about.html">
-                    <button class="language-btn">
-                        English
+                <a href="apply.html">
+                    <button class="menubar-button">
+                        Başvur
                     </button>
                 </a>
 
             </div>
 
-            <p class="initial-view-text">
-                HAKKIMIZDA
+            <div style="width: 50%; height: 90px; background: transparent; justify-content: right; display: flex;">
+
+                <form onsubmit="goToSection(); return false;" autocomplete="off">
+                    <div class="autocomplete" style="width:300px;">
+                        <input id="keyword" class="searchbar" type="text" name="keyword" placeholder="Ara...">
+                    </div>
+
+                    <button type="submit" class="search-button">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </form>
+
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        Çevir
+                        <i class="bi bi-translate"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="about.html">Türkçe</a>
+                        <a href="../en/about.html">English</a>
+                        <a href="../de/about.html">Deutsch</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div
+            style="width: 100%; height:600px; background: linear-gradient(rgba(0, 0, 0, 0.600), rgba(0, 0, 0, 0.800)), url('../../images/teknofest2024.jpeg'); background-size:cover;">
+            <p class="about-title">
+                Hakkımızda
             </p>
         </div>
 
-        <div class="our-target">
-            <div class="our-target-title"> 
-               HEDEFİMİZ 
+        <div class="second-page" style="width: 100%; height: 600px; 
+        background: linear-gradient(rgba(0, 0, 0, 0.600), rgba(0, 0, 0, 0.800)), url('../../images/bird.jpg'); 
+        background-size:cover;">
+
+            <div style="width: 100%; background: transparent; height: 30px;">
+
+            </div>
+            <p style="
+                font-family: 'Eina Bold';
+                font-size: 50px;
+                margin-left: auto;
+                margin-right: auto;
+                padding-top: 20px;
+                color: white;
+                max-width: fit-content;" id="fadein"> Vizyonumuz ve hedeflerimiz </p>
+
+            <div style="display: flex; justify-content: center;">
+                <div class="about-container" style="margin-left: 20px;" id="fadein">
+                    <div class="about-container-title"> Araştırma ve Geliştirme </div>
+                    <div class="about-container-description">
+                        Öğrencilerin, okulun laboratuvarlarını daha etkin ve sık olarak kullanmasını sağlayan, çeşitli
+                        biyoloji dallarına (mikrobiyoloji, moleküler biyoloji, fizyoloji, tıp, zooloji, botanik,
+                        çevrebilim, biyokimya, biyoinformatik vb.) ilgi duyan öğrencileri alanlarında proje geliştirmeye
+                        teşvik eden bir kulübüz. Proje geliştiren öğrencilere; aynı konuya ilgi duyan çalışma
+                        arkadaşları bulma, proje sürecini yönetme, proje raporu yazma, bilimsel literatürü tarama,
+                        hipotez geliştirme, daha önce yapılmış çalışmalardan faydalanma vb. konularda rehberlik
+                        ediyoruz.
+                    </div>
+                </div>
+
+                <div class="about-container" id="fadein">
+                    <div class="about-container-title"> Akademik hayat </div>
+                    <div class="about-container-description">
+                        Genel biyoloji bilgisini geliştirmek isteyen; TÜBİTAK Olimpiyatları, AP, IB, SAT, YKS vb.
+                        sınavlara hazırlanan veya yarışmalara katılmak için çalışan öğrencilere bilimsel hazırlıkları
+                        sırasında destek oluyoruz. Öğrencilerin sadece biyoloji değil bütün bilim camiası hakkında
+                        pozitif bir anlayış geliştirmesini ve bu sayede bilime, öğrenmeye ve araştırmaya ilgili kişiler
+                        olmalarını sağlıyoruz.
+                    </div>
+                </div>
+
+                <div class="about-container" id="fadein">
+                    <div class="about-container-title"> Sosyal etkileşim </div>
+                    <div class="about-container-description">
+                        Sosyal aktiviteler ile öğrencilerin, iş hayatında ihtiyaç duyacakları takım çalışması, süreç
+                        yönetimi, grup iletişimi ve liderlik özelliklerini geliştirmelerini sağlıyoruz. Son olarak
+                        öğrencileri, bilgi birikimlerinden ve deneyimlerinden faydalanmaları için bilim alanlarında
+                        uzman akademisyenler ve diğer araştırmacılar ile bir araya getiriyoruz.
+                    </div>
+                </div>
             </div>
 
-            <div class="our-target-description"> 
-                <p class="our-target-description-p">
-                    Öğrencilerin, okulun laboratuvarlarını daha etkin ve sık olarak kullanmasını 
-                    sağlayan, çeşitli biyoloji dallarına (mikrobiyoloji, moleküler biyoloji, fizyoloji,
-                    tıp, zooloji, botanik, çevrebilim, biyokimya, biyoinformatik vb.) ilgi duyan 
-                    öğrencileri alanlarında proje geliştirmeye teşvik eden bir kulübüz. Proje 
-                    geliştiren öğrencilere; aynı konuya ilgi duyan çalışma arkadaşları bulma, proje 
-                    sürecini yönetme, proje raporu yazma, bilimsel literatürü tarama, hipotez geliştirme,
-                    daha önce yapılmış çalışmalardan faydalanma vb. konularda rehberlik ediyoruz. Ayrıca 
-                    genel biyoloji bilgisini geliştirmek isteyen; TÜBİTAK Olimpiyatları, AP, IB, SAT, 
-                    YKS vb. sınavlara hazırlanan veya yarışmalara katılmak için çalışan öğrencilere 
-                    bilimsel hazırlıkları sırasında destek oluyoruz. Öğrencilerin sadece biyoloji değil
-                    bütün bilim camiası hakkında pozitif bir anlayış geliştirmesini ve bu sayede bilime, 
-                    öğrenmeye ve araştırmaya ilgili kişiler olmalarını sağlıyoruz. Sosyal aktiviteler ile
-                    öğrencilerin, iş hayatında ihtiyaç duyacakları takım çalışması, süreç yönetimi, grup 
-                    iletişimi ve liderlik özelliklerini geliştirmelerini sağlıyoruz. Son olarak 
-                    öğrencileri, bilgi birikimlerinden ve deneyimlerinden faydalanmaları için bilim 
-                    alanlarında uzman akademisyenler ve diğer araştırmacılar ile bir araya getiriyoruz.
-                </p>
+        </div>
+
+        <div
+            style="background: linear-gradient(rgba(0, 0, 0, 0.600), rgba(0, 0, 0, 0.800)), url('../../images/nature-2.jpg'); width: 100%; height: fit-content">
+            <div style="width: 100%; height: 30px;">
+
+            </div>
+            <p style="font-family: 'Eina Bold';
+            font-size: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            color: white;
+            max-width: fit-content; ">
+                Başarılarımız
+            </p>
+            <div class="timeline">
+                <div class="container left">
+
+                    <div id="container-id" class="content">
+                        <div class="competition-image"
+                            style="background-image: url('../../images/teknofest-cropped.png'); ">
+
+                        </div>
+                        <h2 class="competition-success">TEKNOFEST 2023 Sağlıkta Yapay Zeka Kategorisi Finalist</h2>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div id="container-id-right" class="content">
+                        <div class="competition-image"
+                            style="background-image: url('../../images/tubutak-cropped.jpeg'); ">
+
+                        </div>
+                        <h2 class="competition-success">TÜBİTAK 2024 Bölge Yarışması Finalist</h2>
+                    </div>
+                </div>
+                <div class="container left">
+                    <div id="container-id" class="content">
+                        <div class="competition-image"
+                            style="background-image: url('../../images/biogate-cropped.png'); ">
+
+                        </div>
+                        <h2 class="competition-success">İTÜ BioGate Hesaplamalı Biyoloji Kategorisi Birincilik</h2>
+                    </div>
+                </div>
             </div>
         </div>
-        
-        <div class="successes-title">
-            BAŞARILARIMIZ
-        </div>
-
-        <div class="successes-div">
-            <div class="teknofest-success">
-                <p>
-                    TEKNOFEST 2023 Sağlıkta Yapay Zeka Yarışması Finalist 
-                </p>
-            </div>
-
-            <div class="tubitak-success">
-                <p>
-                    TÜBİTAK 2024 Bölge Yarışması Finalist
-                </p>
-            </div>
-
-            <div class="biogate-success">
-                <p>
-                    İTÜ BioGate Hesaplamalı Biyoloji Kategorisi Birincilik
-                </p>
-            </div>
-        </div>
-    </body>
+        <script src="../../about.js"></script>
+</body>
+<script src="../../autocomplete_javascript/tr/autocomplete.js"></script>
+<script src="../../autocomplete_javascript/tr/navigate_to_file.js"></script>
 </html>

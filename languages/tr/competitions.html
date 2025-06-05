@@ -1,171 +1,185 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title> Yarışmalar | CALYBK</title>
-        <link rel="icon" type="image/x-icon" href="../../images/logo.ico">
-        <meta name="keywords" content="calybk, ybk, CALYBK, YBK, yaşam bilimleri, Cağaloğlu Anadolu Lisesi, cağaloğlu anadolu lisesi, cağaloğlu, Cağaloğlu">
-        <meta name="description" content="Cağaloğlu Anadolu Lisesi Yaşam Bilimleri Kulübü İnternet Sitesi">
-        <meta name="author" content="Oğuz Kağan Varol">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <link rel="stylesheet" href="../../styles/competitions.css">
-        <div class="initial-view">
-            <div class="navigationbar-div">
-                <a href="../../index.html">
-                    <button class="home">
-                        ANA SAYFA
-                    </button>
-                </a>
-    
-                <a href="../tr/about.html">
-                    <button class="about">
-                        HAKKINDA
-                    </button>
-                </a>
-    
-                <a href="../tr/competitions.html">
-                    <button class="competitions">
-                        YARIŞMALAR
-                    </button>
-                </a>
-    
-                <a href="../tr/teams.html">
-                    <button class="teams">
-                        TAKIMLAR
-                    </button>
-                </a>
-    
-                <a href="../tr/projects.html">
-                    <button class="projects">
-                        PROJELER
-                    </button>
-                </a>
 
-                <a href="languages/tr/publications.html">
-                    <button class="projects">
-                        YAYINLAR
-                    </button>
-                </a>
+<head>
 
-                <a href="languages/tr/announcements.html">
-                    <button class="projects">
-                        DUYURULAR
-                    </button>
-                </a>
+    <title> Yarışmalar | CALYBK </title>
+    <link rel="icon" type="image/x-icon" href="../../images/logo.ico">
 
-                <a href="languages/tr/calybd.html">
-                    <button class="projects">
-                        CALYBD
-                    </button>
-                </a>
-    
-                <a href="../tr/contact.html">
-                    <button class="contact">
-                        İLETİŞİM
-                    </button>
-                </a>
-    
-                <input class="searchbar" type="text" placeholder="  Ara...">
-                <a href="../en/competitions.html">
-                    <button class="language-btn">
-                        English
-                    </button>
-                </a>
+</head>
 
-                
+<body>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <div style="overflow-y: auto;">
+        <div id="mainpage"
+            style="overflow-y: auto; width: 100%; height: fit-content; background-size: cover; background-image: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)), url('../../images/chess.jpg'); background-size:cover">
+
+            <div class="navigationbar-div" id="mainmenubar"
+                style="top:0; position: fixed;background: transparent; width: 100%; height: 90px; display: flex; justify-content: center; z-index: 1;">
+                <div style="width: 50%; height: 90px; background: transparent; justify-content: left; display: flex;">
+                    <a href="../../index.html">
+                        <button class="home">
+                            <img src="../../images/logo.png" style="height: 50px; width: 50px;">
+                        </button>
+                    </a>
+
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            Hakkında
+                            <i class="bi bi-chevron-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="about.html">CALYBK Hakkında</a>
+                            <a href="teams.html">Takımlar</a>
+                            <a href="competitions.html">Yarışmalar</a>
+                            <a href="projects.html">Projeler</a>
+                        </div>
+                    </div>
+
+
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            Yayınlar
+                            <i class="bi bi-chevron-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="publications.html">Yayınlar</a>
+                            <a href="announcements.html">Duyurular</a>
+                            <a href="calybd.html">CALYBD</a>
+                        </div>
+                    </div>
+
+                    <a href="contact.html">
+                        <button class="menubar-button">
+                            İletişim
+                        </button>
+                    </a>
+
+                    <a href="sponsor.html">
+                        <button class="menubar-button">
+                            Sponsorluk
+                        </button>
+                    </a>
+
+                    <a href="apply.html">
+                        <button class="menubar-button">
+                            Başvur
+                        </button>
+                    </a>
+
+                </div>
+
+                <div style="width: 50%; height: 90px; background: transparent; justify-content: right; display: flex;">
+
+                    <form onsubmit="goToSection(); return false;" autocomplete="off">
+                        <div class="autocomplete" style="width:300px;">
+                            <input id="keyword" class="searchbar" type="text" name="keyword" placeholder="Ara...">
+                        </div>
+
+                        <button type="submit" class="search-button">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </form>
+
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            Çevir
+                            <i class="bi bi-translate"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="../tr/competitions.html">Türkçe</a>
+                            <a href="../en/competitions.html">English</a>
+                            <a href="../de/competitions.html">Deutsch</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <p class="initial-view-text">
-                YARIŞMALAR
-            </p>
+
+            <div class="competition-div" style="padding-top: 150px;">
+                <div id="left-block" class="competition-img"
+                    style="background: url('../../images/teknofest-cropped.png');  background-size: cover;">
+
+                </div>
+
+                <div id="right-block" class="competition-description">
+                    <p class="competition-description-title"> TEKNOFEST 2023 Sağlıkta Yapay Zeka Yarışması</p>
+                    Bu yarışmaya "Bilgisayarlı Görüyle Tarama Mamografilerinde BI-RADS Kategorisi ve Meme
+                    Kompozisyonu Tahmini" başlıklı projeyle katılım sağlanmıştır. Rapor aşamalarını geçen
+                    BioCally takımı başvuran 719 takım arasından son 19 takım arasına kalarak finalist olmuştur.
+                </div>
+            </div>
+
+            <div class="competition-div" style="padding-top: 150px; ">
+
+                <div class="competition-description" id="left-block">
+                    <p class="competition-description-title"> İTÜ BioGate Hesaplamalı Biyoloji Yarışması</p>
+                    İstanbul Teknik Üniversitesi bünyesinde düzenlenen BioGate yarışmasına
+                    "Conivaptan Hidroklorürün PDAC Kanserindeki Laktat Metabolizmasına ve İmmün Baskılayıcı
+                    Sisteme Karşı İnhibitör Olarak Kullanılması" başlıklı proje ile katılım sağlandı.
+                    Uluslararası düzeyde ve üniversite takımlarıyla yarışan BioCally "Computational Biology"
+                    kategorisinde birincilik elde etmiştir.
+                </div>
+
+                <div id="right-block" class="competition-img"
+                    style="background: url('../../images/biogate-cropped.png');  background-size: cover;">
+
+                </div>
+            </div>
+
+
+            <div class="competition-div" style="padding-top: 150px; ">
+                <div class="competition-img" id="left-block"
+                    style="background: url('../../images/tubutak-cropped.jpeg');  background-size: cover;">
+
+                </div>
+
+                <div id="right-block" class="competition-description">
+                    <p class="competition-description-title"> TÜBİTAK 2024 Bölge Yarışması</p>
+                    Tübitak 2024 yarışmasına "MCT1/MCT4 İnhibisyonu ile Pankreas Duktal Adenokarsinom
+                    Kanserindeki Laktat Metabolizmasının Bozulması", "Conivaptan Hidroklorürün PDAC Kanserindeki
+                    Laktat Metabolizmasına ve İmmün Baskılayıcı Sisteme Karşı İnhibitör Olarak Kullanılması" ve
+                    "Mamografi Görüntülerinin Derin Öğrenme Yaklaşımlarıyla Sınıflandırılması" olmak üzere 3
+                    projeyle katılan BioCally bunlardan 2 tanesi ile "Bölge Yarışması"na katılım hakkı elde
+                    etmiştir.
+                </div>
+            </div>
+
+            <div class="competition-div" style="padding-top: 150px; ">
+
+                <div id="left-block" class="competition-description">
+                    <p class="competition-description-title"> TEKNOFEST 2024 Sağlıkta Yapay Zeka Yarışması</p>
+                    Bu yarışmada ise "Bilgisayarlı Görüyle Tarama Mamografilerinde BI-RADS Kategorisi ve Meme
+                    Kompozisyonu Tahmini" projesinin geliştirilmesi hedeflenmiştir. Mamografiler üzerinde
+                    yapay zeka ile kitle ve kalsifikasyon tespiti ve "Mamografi Radyoloji Raporlarından
+                    Varlık İsmi Çıkarımı" gibi yeni atılımlarda bulunulmuştur.
+                </div>
+
+                <div id="right-block" class="competition-img"
+                    style="background: url('../../images/teknofest2024.jpeg');  background-size: cover;">
+
+                </div>
+            </div>
+
+            <div class="competition-div" style="padding-top: 150px; ">
+                <div id="left-block" class="competition-img"
+                    style="background: url('../../images/t2024bio-cropped.jpeg'); background-size: cover;">
+
+                </div>
+
+                <div id="right-block" class="competition-description">
+                    <p class="competition-description-title"> TEKNOFEST 2024 Biyoteknoloji İnovasyon Yarışması</p>
+                    Teknofest 2024 Biyoteknoloji İnovasyon Yarışması'na "Adeno-İlişkili Viral Vektörlerin in Vivo
+                    Gen Replasmanı Yöntemi ile Tip 1 Diabetes Mellitus Tedavisi" adlı projeye ek olarak
+                    Tübitak'ta yarışmış olan 2 proje olmak üzere 3 proje ile katılım sağlanmıştır.
+                </div>
+            </div>
         </div>
+    </div>
 
-        <div class="teknofest-div">
-            <div class="teknofest-div-img">
-                
-            </div>
-            <div class="teknofest-div-text">
-                <div class="teknofest-div-text-title">
-                    Teknofest 2023 Sağlıkta Yapay Zeka Yarışması
-                </div>
-                <div class="teknofest-div-text-description">
-                    Bu yarışmaya "Bilgisayarlı Görüyle Tarama Mamografilerinde BI-RADS Kategorisi ve Meme Kompozisyonu Tahmini" başlıklı projeyle katılım sağlanmıştır. Rapor aşamalarını geçen BioCally takımı başvuran 719 takım arasından son 19 takım arasına kalarak finalist olmuştur.
-                </div>
-                
-            </div>
-        </div>
-
-        <div class="biogate-div">
-            
-            <div class="biogate-div-text">
-                <div class="biogate-div-text-description">
-                    İstanbul Teknik Üniversitesi bünyesinde düzenlenen BioGate yarışmasına "Conivaptan Hidroklorürün PDAC Kanserindeki Laktat Metabolizmasına ve İmmün Baskılayıcı Sisteme Karşı İnhibitör Olarak Kullanılması" başlıklı proje ile katılım sağlandı. Uluslararası düzeyde ve üniversite takımlarıyla yarışan BioCally "Computational Biology" kategorisinde birincilik elde etmiştir.
-                </div>
-
-                <div class="biogate-div-text-title">
-                    İTÜ BioGate Hesaplamalı Biyoloji Kategorisi
-                </div>
-                
-            </div>
-            <div class="biogate-div-img">
-                
-            </div>
-        </div>
-
-
-        <div class="tubitak-div">
-            <div class="tubitak-div-img">
-                
-            </div>
-
-            <div class="tubitak-div-text">
-
-                <div class="tubitak-div-text-title">
-                    Tübitak 2024 Bölge Yarışması
-                </div>
-                <div class="tubitak-div-text-description">
-                    Tübitak 2024 yarışmasına "MCT1/MCT4 İnhibisyonu ile Pankreas Duktal Adenokarsinom Kanserindeki Laktat Metabolizmasının Bozulması", "Conivaptan Hidroklorürün PDAC Kanserindeki Laktat Metabolizmasına ve İmmün Baskılayıcı Sisteme Karşı İnhibitör Olarak Kullanılması" ve "Mamografi Görüntülerinin Derin Öğrenme Yaklaşımlarıyla Sınıflandırılması" olmak üzere 3 projeyle katılan BioCally bunlardan 2 tanesi ile "Bölge Yarışması"na katılım hakkı elde etmiştir.
-                </div>
-                
-            </div>
-            
-        </div>
-
-        <div class="teknofest-2024-ai-div">
-            
-            <div class="teknofest-2024-ai-div-text">
-                <div class="teknofest-2024-ai-div-text-description">
-                    Bu yarışmada ise "Bilgisayarlı Görüyle Tarama Mamografilerinde BI-RADS Kategorisi ve Meme Kompozisyonu Tahmini" projesinin geliştirilmesi hedeflenmiştir. Mamografiler üzerinde yapay zeka ile kitle ve kalsifikasyon tespiti ve "Mamografi Radyoloji Raporlarından Varlık İsmi Çıkarımı" gibi yeni atılımlarda bulunulmuştur.
-                </div>
-
-                <div class="teknofest-2024-ai-div-text-title">
-                    Teknofest 2024 Sağlıkta Yapay Zeka Yarışması
-                </div>
-                
-            </div>
-            <div class="teknofest-2024-ai-div-img">
-                
-            </div>
-        </div>
-
-
-
-        <div class="teknofest-2024-bio-div">
-            <div class="teknofest-2024-bio-div-img">
-                
-            </div>
-
-            <div class="teknofest-2024-bio-div-text">
-
-                <div class="teknofest-2024-bio-div-text-title">
-                    Teknofest 2024 Biyoteknoloji İnovasyon Yarışması
-                </div>
-                <div class="teknofest-2024-bio-div-text-description">
-                    Teknofest 2024 Biyoteknoloji İnovasyon Yarışması'na "Adeno-İlişkili Viral Vektörlerin in Vivo Gen Replasmanı Yöntemi ile Tip 1 Diabetes Mellitus Tedavisi" adlı projeye ek olarak Tübitak'ta yarışmış olan 2 proje olmak üzere 3 proje ile katılım sağlanmıştır.
-                </div>
-                
-            </div>
-            
-        </div>
-    </body>
+    <link rel="stylesheet" href="../../styles/competitions.css">
+    <script src="../../competitions.js"></script>
+</body>
+<script src="../../autocomplete_javascript/tr/autocomplete.js"></script>
+<script src="../../autocomplete_javascript/tr/navigate_to_file.js"></script>
 </html>

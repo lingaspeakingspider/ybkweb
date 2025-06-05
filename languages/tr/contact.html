@@ -1,120 +1,193 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Contact | CALYBK</title>
-        <link rel="icon" type="image/x-icon" href="../../images/logo.ico">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <meta name="keywords" content="calybk, ybk, CALYBK, YBK, yaşam bilimleri, Cağaloğlu Anadolu Lisesi, cağaloğlu anadolu lisesi, cağaloğlu, Cağaloğlu">
-        <meta name="description" content="Cağaloğlu Anadolu Lisesi Yaşam Bilimleri Kulübü İnternet Sitesi">
-        <meta name="author" content="Oğuz Kağan Varol">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <link rel="stylesheet" href="../../styles/contact.css">
-        <div class="initial-view">
-            <div class="navigationbar-div">
-                <a href="../../index.html">
-                    <button class="home">
-                        ANA SAYFA
-                    </button>
-                </a>
-    
-                <a href="../tr/about.html">
-                    <button class="about">
-                        HAKKINDA
-                    </button>
-                </a>
-    
-                <a href="../tr/competitions.html">
-                    <button class="competitions">
-                        YARIŞMALAR
-                    </button>
-                </a>
-    
-                <a href="../tr/teams.html">
-                    <button class="teams">
-                        TAKIMLAR
-                    </button>
-                </a>
-    
-                <a href="../tr/projects.html">
-                    <button class="projects">
-                        PROJELER
-                    </button>
-                </a>
 
-                <a href="languages/tr/publications.html">
-                    <button class="projects">
-                        YAYINLAR
-                    </button>
-                </a>
+<head>
+    <title> İletişim | CALYBK </title>
+    <link rel="icon" type="image/x-icon" href="../../images/logo.ico">
 
-                <a href="languages/tr/announcements.html">
-                    <button class="projects">
-                        DUYURULAR
-                    </button>
-                </a>
+</head>
 
-                <a href="languages/tr/calybd.html">
-                    <button class="projects">
-                        CALYBD
-                    </button>
-                </a>
-    
-                <a href="../tr/contact.html">
-                    <button class="contact">
-                        İLETİŞİM
-                    </button>
-                </a>
-    
-                <input class="searchbar" type="text" placeholder="  Ara...">
-                <a href="../en/contact.html">
-                    <button class="language-btn">
-                        English
-                    </button>
-                </a>
-                
-            </div>
-            <p class="any-questions">
-                Sorularınız mı var? Lütfen bizimle iletişime geçin.
-            </p>
+<body style="
+    background-image: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)), url('../../images/contact.jpg');
+    background-size: cover; align-items: center; position: relative;
+  height: 100%;">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <div class="navigationbar-div" id="mainmenubar"
+        style="top:0; position: fixed;background: transparent; width: 100%; height: 90px; display: flex; justify-content: center; z-index: 1;">
+        <div style="width: 50%; height: 90px; background: transparent; justify-content: left; display: flex;">
+            <a href="../../index.html">
+                <button class="home">
+                    <img src="../../images/logo.png" style="height: 50px; width: 50px;">
+                </button>
+            </a>
 
-            <div class="general-infos"> 
-                <div class="info">
-                    <p class="gnl-title">
-                        Adres
-                    </p>
-
-                    <p class="gnl-description">
-                        Molla Fenari Mah. Babı Ali Cad. No 1 Fatih/Istanbul
-                    </p>
-                </div>
-
-                <div class="info">
-                    <p class="gnl-title">
-                        Email
-                    </p>
-
-                    <p class="gnl-description">
-                        calybk2021@gmail.com
-                    </p>
-                </div>
-
-                <div class="info">
-                    <p class="gnl-title">
-                        Sosyal Medya
-                    </p>
-
-                    <div class="social-media-div">
-                        <a href="https://www.instagram.com/calybk/" class="fa fa-instagram"></a>
-                        <a href="https://www.linkedin.com/company/calybk/" class="fa fa-linkedin"></a>  
-                    </div>
+            <div class="dropdown">
+                <button class="dropbtn">
+                    Hakkında
+                    <i class="bi bi-chevron-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="about.html">CALYBK Hakkında</a>
+                    <a href="teams.html">Takımlar</a>
+                    <a href="competitions.html">Yarışmalar</a>
+                    <a href="projects.html">Projeler</a>
                 </div>
             </div>
 
-            <div>
 
+            <div class="dropdown">
+                <button class="dropbtn">
+                    Yayınlar
+                    <i class="bi bi-chevron-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="publications.html">Yayınlar</a>
+                    <a href="announcements.html">Duyurular</a>
+                    <a href="calybd.html">CALYBD</a>
+                </div>
+            </div>
+
+            <a href="contact.html">
+                <button class="menubar-button">
+                    İletişim
+                </button>
+            </a>
+
+            <a href="sponsor.html">
+                <button class="menubar-button">
+                    Sponsorluk
+                </button>
+            </a>
+
+            <a href="apply.html">
+                <button class="menubar-button">
+                    Başvur
+                </button>
+            </a>
+
+        </div>
+
+        <div style="width: 50%; height: 90px; background: transparent; justify-content: right; display: flex;">
+
+            <form onsubmit="goToSection(); return false;" autocomplete="off">
+                <div class="autocomplete" style="width:300px;">
+                    <input id="keyword" class="searchbar" type="text" name="keyword" placeholder="Ara...">
+                </div>
+
+                <button type="submit" class="search-button">
+                    <i class="bi bi-search"></i>
+                </button>
+            </form>
+
+            <div class="dropdown">
+                <button class="dropbtn">
+                    Çevir
+                    <i class="bi bi-translate"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="../tr/contact.html">Türkçe</a>
+                    <a href="../en/contact.html">English</a>
+                    <a href="../de/contact.html">Deutsch</a>
+                </div>
             </div>
         </div>
-    </body>
+    </div>
+
+    <div style="margin-top:100px">
+
+    </div>
+
+    <div class="einsteins-word">
+        <p style="color: white; font-family: 'Eina Bold'; margin: 0 auto; font-size: 20px;">
+            "Önemli olan sorgulamayı asla bırakmamaktır."
+        </p>
+    </div>
+
+    <div class="einsteins-word2">
+        <p style="color: white; font-family: 'Eina Bold'; margin: 0 auto; font-size: 15px;">
+            ~ Albert Einstein ~
+        </p>
+    </div>
+
+    <div class="questions">
+        <p style="color: white; font-family: 'Eina Bold'; margin: 0 auto; font-size: 25px;">
+            Sorularınız mı var? Lütfen bize sormaktan çekinmeyin!
+        </p>
+    </div>
+
+    <div class="contact-div">
+        <div class="personal">
+            <p class="name"> Mert Daniel Önal </p>
+            <p class="mission"> Kulüp Lideri </p>
+
+            <p class="infos"> E-posta: mertdanielonal@gmail.com </p>
+            <p class="infos"> Telefon: +90 561 623 7129 </p>
+
+            <a href="mailto:mertdanielonal@gmail.com" style="text-decoration: none;">
+                <button class="social-media-button">
+                    <i class="bi bi-envelope"></i>
+                </button>
+            </a>
+        </div>
+
+
+        <div class="personal">
+            <p class="name"> Gökhan Gündüz </p>
+            <p class="mission"> Danışman </p>
+
+            <p class="infos"> E-posta: biyogok@gmail.com </p>
+            <p class="infos"> Telefon: +90 561 623 7129 </p>
+
+            <a href="mailto:biyogok@gmail.com" style="text-decoration: none;">
+                <button class="social-media-button">
+                    <i class="bi bi-envelope"></i>
+                </button>
+            </a>
+        </div>
+
+        <div class="personal">
+            <p class="name"> CALYBK İletişim </p>
+            <p class="mission"> Kulüp İletişim Merkezi </p>
+
+            <p class="infos"> E-posta: calybk2021@gmail.com </p>
+            <p class="infos"> Instagram: @calybk </p>
+
+            <a href="mailto:calybk2021@gmail.com" style="text-decoration: none;">
+                <button class="social-media-button">
+                    <i class="bi bi-envelope"></i>
+                </button>
+            </a>
+
+            <a href="https://www.instagram.com/calybk/" style="text-decoration: none;">
+                <button class="social-media-button">
+                    <i class="bi bi-instagram"></i>
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <div class="visit">
+        <div>
+            <p style="color: white; font-family: 'Eina Bold'; font-size: 25px;">
+                Okulumuzu ziyaret edin!
+            </p>
+
+            <p style="color:white; font-size: 15px; font-family: 'Eina Regular'; margin-top: 30px;">
+                <i class="bi bi-geo-alt-fill"></i> Molla Fenari Mah. Babı Ali Cad. No 1 Fatih/Istanbul
+            </p>
+        </div>
+
+        <div class="map">
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.7346455407524!2d28.970421274883066!3d41.00918081937112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab996785e0231%3A0x66786fc7629eda11!2sCa%C4%9Falo%C4%9Flu%20Anadolu%20Lisesi!5e0!3m2!1str!2str!4v1748785072155!5m2!1str!2str"
+                width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <link rel="stylesheet" href="../../styles/contact.css">
+</body>
+<script src="../../autocomplete_javascript/tr/autocomplete.js"></script>
+<script src="../../autocomplete_javascript/tr/navigate_to_file.js"></script>
 </html>

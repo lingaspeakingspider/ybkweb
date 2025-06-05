@@ -1,118 +1,216 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>About | CALYBK</title>
-        <link rel="icon" type="image/x-icon" href="../../images/logo.ico">
-        <meta name="keywords" content="calybk, ybk, CALYBK, YBK, yaşam bilimleri, Cağaloğlu Anadolu Lisesi, cağaloğlu anadolu lisesi, cağaloğlu, Cağaloğlu">
-        <meta name="description" content="Cağaloğlu Anadolu Lisesi Yaşam Bilimleri Kulübü İnternet Sitesi">
-        <meta name="author" content="Oğuz Kağan Varol">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <link rel="stylesheet", href="../../styles/about.css">
-        <div class="initial-view">
-            <div class="navigationbar-div">
-                <a href="../en/home_page.html">
+
+<head>
+
+    <title> About Us | CALYBK </title>
+    <link rel="icon" type="image/x-icon" href="../../images/logo.ico">
+
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../styles/about.css">
+
+    <div>
+
+        <div class="navigationbar-div" id="mainmenubar"
+            style="top:0; position: fixed;background: transparent; width: 100%; height: 90px; display: flex; justify-content: center; z-index: 1;">
+            <div style="width: 50%; height: 90px; background: transparent; justify-content: left; display: flex;">
+                <a href="../../languages/en/home_page.html">
                     <button class="home">
-                        HOME
+                        <img src="../../images/logo.png" style="height: 50px; width: 50px;">
                     </button>
                 </a>
-    
-                <a href="../en/about.html">
-                    <button class="about">
-                        ABOUT
+
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        About
+                        <i class="bi bi-chevron-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="about.html">About CALYBK</a>
+                        <a href="teams.html">Teams</a>
+                        <a href="competitions.html">Competitions</a>
+                        <a href="projects.html">Projects</a>
+                    </div>
+                </div>
+
+
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        Publications
+                        <i class="bi bi-chevron-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="publications.html">Publications</a>
+                        <a href="announcements.html">Announcements</a>
+                        <a href="calybd.html">CALYBD</a>
+                    </div>
+                </div>
+
+                <a href="contact.html">
+                    <button class="menubar-button">
+                        Contact
                     </button>
                 </a>
-    
-                <a href="../en/competitions.html">
-                    <button class="competitions">
-                        COMPETITIONS
+
+                <a href="sponsor.html">
+                    <button class="menubar-button">
+                        Sponsorship
                     </button>
                 </a>
-    
-                <a href="../en/teams.html">
-                    <button class="teams">
-                        TEAMS
-                    </button>
-                </a>
-    
-                <a href="../en/projects.html">
-                    <button class="projects">
-                        PROJECTS
-                    </button>
-                </a>
-    
-                <a href="../en/contact.html">
-                    <button class="contact">
-                        CONTACT
-                    </button>
-                </a>
-    
-                <input class="searchbar" type="text" placeholder="  Search...">
-                <a href="../tr/about.html">
-                    <button class="language-btn">
-                        Türkçe
+
+                <a href="apply.html">
+                    <button class="menubar-button">
+                        Apply
                     </button>
                 </a>
 
             </div>
 
-            <p class="initial-view-text">
-                ABOUT US
+            <div style="width: 50%; height: 90px; background: transparent; justify-content: right; display: flex;">
+
+                <form onsubmit="goToSection(); return false;" autocomplete="off">
+                    <div class="autocomplete" style="width:300px;">
+                        <input id="keyword" class="searchbar" type="text" name="keyword" placeholder="Search...">
+                    </div>
+
+                    <button type="submit" class="search-button">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </form>
+
+
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        Translate
+                        <i class="bi bi-translate"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="../tr/about.html">Türkçe</a>
+                        <a href="about.html">English</a>
+                        <a href="../de/about.html">Deutsch</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Until end of navigation bar-->
+
+
+        <div
+            style="width: 100%; height:600px; background: linear-gradient(rgba(0, 0, 0, 0.600), rgba(0, 0, 0, 0.800)), url('../../images/teknofest2024.jpeg'); background-size:cover;">
+            <p class="about-title">
+                About Us
             </p>
         </div>
 
-        <div class="our-target">
-            <div class="our-target-title"> 
-                OUR TARGET 
+        <div class="second-page" style="width: 100%; height: 600px; 
+        background: linear-gradient(rgba(0, 0, 0, 0.600), rgba(0, 0, 0, 0.800)), url('../../images/bird.jpg'); 
+        background-size:cover;">
+
+            <div style="width: 100%; background: transparent; height: 30px;">
+
+            </div>
+            <p style="
+                font-family: 'Eina Bold';
+                font-size: 50px;
+                margin-left: auto;
+                margin-right: auto;
+                padding-top: 20px;
+                color: white;
+                max-width: fit-content;" id="fadein"> Our vision and goals </p>
+
+            <div style="display: flex; justify-content: center;">
+                <div class="about-container" style="margin-left: 20px;" id="fadein">
+                    <div class="about-container-title"> Research and Development </div>
+                    <div class="about-container-description">
+                        We are a club that allows students to use the school's laboratories more effectively and
+                        frequently, and encourages students interested in various branches of biology (microbiology,
+                        molecular biology, physiology, medicine, zoology, botany, ecology, biochemistry, bioinformatics,
+                        etc.) to develop projects in their fields. We guide students who develop projects in finding
+                        colleagues who are interested in the same subject, managing the project process, writing a
+                        project report, scanning scientific literature, developing hypotheses, benefiting from previous
+                        studies, etc.
+                    </div>
+                </div>
+
+                <div class="about-container" id="fadein">
+                    <div class="about-container-title"> Acamdemic Life </div>
+                    <div class="about-container-description">
+                        We support students who want to improve their general biology knowledge; who are preparing for
+                        exams such as TUBITAK Olympiads, AP, IB, SAT, YKS, etc. or who are working to participate in
+                        competitions, during their scientific preparations. We ensure that students develop a positive
+                        understanding not only about biology but also about the entire scientific community, and thus
+                        become people interested in science, learning and research.
+                    </div>
+                </div>
+
+                <div class="about-container" id="fadein">
+                    <div class="about-container-title"> Social Interaction </div>
+                    <div class="about-container-description">
+                        With social activities, we ensure that students develop teamwork, process management, group
+                        communication and leadership skills that they will need in business life. Finally, we bring
+                        students together with academics and other researchers who are experts in their fields of
+                        science so that they can benefit from their knowledge and experience.
+                    </div>
+                </div>
             </div>
 
-            <div class="our-target-description"> 
-                <p class="our-target-description-p">
-                    We are a club that enables students to use the school's laboratories more 
-                    effectively and frequently and encourages students who are interested in various
-                    branches of biology (microbiology, molecular biology, physiology, medicine, 
-                    zoology, botany, ecology, biochemistry, bioinformatics, etc.) to develop projects 
-                    in their fields. Students developing projects; finding colleagues who are 
-                    interested in the same subject, managing the project process, writing a project 
-                    report, scanning the scientific literature, developing hypotheses, benefiting from 
-                    previous studies, etc. We provide guidance on issues. In addition, those who want 
-                    to improve their general biology knowledge; TÜBİTAK Olympics, AP, IB, SAT, YKS etc. 
-                    We support students who are preparing for exams or studying to participate in 
-                    competitions during their scientific preparations. We ensure that students develop 
-                    a positive understanding not only of biology but also of the entire scientific 
-                    community, and thus become individuals interested in science, learning and 
-                    research. With social activities, we enable students to develop the teamwork, 
-                    process management, group communication and leadership skills they will need in 
-                    business life. Finally, to bring students together with academics and other 
-                    researchers who are experts in their fields of science so that they can benefit 
-                    from their knowledge and experience.
-                </p>
+        </div>
+
+        <div
+            style="background: linear-gradient(rgba(0, 0, 0, 0.600), rgba(0, 0, 0, 0.800)), url('../../images/nature-2.jpg'); width: 100%; height: fit-content">
+            <div style="width: 100%; height: 30px;">
+
+            </div>
+            <p style="font-family: 'Eina Bold';
+            font-size: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 10px;
+            padding-bottom: 20px;
+            color: white;
+            max-width: fit-content; ">
+                Our Successes
+            </p>
+            <div class="timeline">
+                <div class="container left">
+
+                    <div class="content">
+                        <div class="competition-image"
+                            style="background-image: url('../../images/teknofest-cropped.png'); ">
+
+                        </div>
+                        <h2 class="competition-success">Finalist in TEKNOFEST 2023 Artificial Intelligence in Health
+                            Category</h2>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content">
+                        <div class="competition-image"
+                            style="background-image: url('../../images/tubutak-cropped.jpeg'); ">
+
+                        </div>
+                        <h2 class="competition-success">Finalist in TÜBİTAK 2024 Regional Competition</h2>
+                    </div>
+                </div>
+                <div class="container left">
+                    <div class="content">
+                        <div class="competition-image"
+                            style="background-image: url('../../images/biogate-cropped.png'); ">
+
+                        </div>
+                        <h2 class="competition-success">First Place in ITU BioGate Computational Biology Category</h2>
+                    </div>
+                </div>
             </div>
         </div>
-        
-        <div class="successes-title">
-            OUR SUCCESS
-        </div>
 
-        <div class="successes-div">
-            <div class="teknofest-success">
-                <p>
-                    TEKNOFEST 2023 Finalist in Artificial Intelligence in Health Competition 
-                </p>
-            </div>
+    <script src="../../autocomplete_javascript/en/autocomplete.js"></script>
+    <script src="../../autocomplete_javascript/en/navigate_to_file.js"></script>
+</body>
 
-            <div class="tubitak-success">
-                <p>
-                    TÜBİTAK 2024 Finalist in Regional Competition
-                </p>
-            </div>
-
-            <div class="biogate-success">
-                <p>
-                    ITU BioGate Computational Biology Category First Place
-                </p>
-            </div>
-        </div>
-    </body>
 </html>

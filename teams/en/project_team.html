@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Project Team | CALYBK </title>
+    <link rel="icon" type="image/x-icon" href="../../images/logo.ico">
+
+</head>
+
+<body style="
+    background-image: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)), url('../../images/project_team.jpg');
+    background-size: cover; align-items: center; position: relative;
+  height: 100%;">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <div class="navigationbar-div" id="mainmenubar"
+        style="top:0; position: fixed;background: transparent; width: 100%; height: 90px; display: flex; justify-content: center; z-index: 1;">
+        <div style="width: 50%; height: 90px; background: transparent; justify-content: left; display: flex;">
+            <a href="../../languages/en/home_page.html">
+                <button class="home">
+                    <img src="../../images/logo.png" style="height: 50px; width: 50px;">
+                </button>
+            </a>
+
+            <div class="dropdown">
+                <button class="dropbtn">
+                    About
+                    <i class="bi bi-chevron-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="../../languages/en/about.html">About CALYBK</a>
+                    <a href="../../languages/en/teams.html">Teams</a>
+                    <a href="../../languages/en/competitions.html">Competitions</a>
+                    <a href="../../languages/en//projects.html">Projects</a>
+                </div>
+            </div>
+
+
+            <div class="dropdown">
+                <button class="dropbtn">
+                    Publications
+                    <i class="bi bi-chevron-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="../../languages/en/publications.html">Publications</a>
+                    <a href="../../languages/en/announcements.html">Announcements</a>
+                    <a href="../../languages/en/calybd.html">CALYBD</a>
+                </div>
+            </div>
+
+            <a href="contact.html">
+                <button class="menubar-button">
+                    Contact
+                </button>
+            </a>
+
+            <a href="sponsor.html">
+                <button class="menubar-button">
+                    Sponsorship
+                </button>
+            </a>
+
+            <a href="apply.html">
+                <button class="menubar-button">
+                    Apply
+                </button>
+            </a>
+
+        </div>
+
+        <div style="width: 50%; height: 90px; background: transparent; justify-content: right; display: flex;">
+
+            <form onsubmit="goToSection(); return false;" autocomplete="off">
+                <div class="autocomplete" style="width:300px;">
+                    <input id="keyword" class="searchbar" type="text" name="keyword" placeholder="Search...">
+                </div>
+
+                <button type="submit" class="search-button">
+                    <i class="bi bi-search"></i>
+                </button>
+            </form>
+
+
+            <div class="dropdown">
+                <button class="dropbtn">
+                    Translate
+                    <i class="bi bi-translate"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="../tr/project_team.html">Türkçe</a>
+                    <a href="../en/project_team.html">English</a>
+                    <a href="../de/project_team.html">Deutsch</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="title-div">
+        PROJECT TEAM
+    </div>
+
+
+    <div class="leader" style="justify-content: center; display:flex; margin-bottom: 30px;">
+        <div class="leader-photo">
+
+            <div class="photo">
+                <div class="photo-button-div">
+                    <button class="photo-button">
+                        <a href="">
+                            <i class="bi bi-envelope" id="button-icon"></i>
+                        </a>
+                    </button>
+
+                    <button class="photo-button">
+                        <a href="">
+                            <i class="bi bi-linkedin" id="button-icon"></i>
+                        </a>
+                    </button>
+                </div>
+            </div>
+
+            <div class="name">
+                <div class="name-text">
+                    Oğuz Kağan Varol
+                </div>
+                <div class="task" style="font-family: 'Eina Regular'; font-size:13px; padding: 5px;"> Head Of Project Department
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="teams-div">
+        <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)), url('../../project_teams_backgrounds/biyoinformatik.jpg');
+    background-size: cover" class="team">
+            <p class="team-title">
+                BioCally (Bioinformatics Team)
+            </p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book</p>
+        </div>
+
+        <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)), url('../../project_teams_backgrounds/biyokimya.jpg');
+    background-size: cover" class="team">
+            <p class="team-title">
+                Biochemistry and Molecular Biology Team
+            </p>
+
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book
+        </div>
+    </div>
+
+    <div class="teams-div">
+        <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)), url('../../project_teams_backgrounds/deniz\ bilimleri.jpg');
+    background-size: cover" class="team">
+            <p class="team-title">
+                Marine Science Team
+            </p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book
+        </div>
+
+        <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)), url('../../project_teams_backgrounds/botanik.jpg');
+    background-size: cover" class="team">
+            <p class="team-title">
+                Botany Team
+            </p>
+
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book
+        </div>
+    </div>
+
+    <div class="teams-div">
+        <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)), url('../../project_teams_backgrounds/ekoloji.jpg');
+    background-size: cover" class="team">
+            <p class="team-title">
+                Ecology and Evolutionary Science Team
+            </p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book
+        </div>
+
+        <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)), url('../../project_teams_backgrounds/mikrobiyoloji.jpg');
+    background-size: cover" class="team">
+            <p class="team-title">
+                Microbiology Team
+            </p>
+
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book
+        </div>
+    </div>
+
+    <div class="teams-div">
+        <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)), url('../../project_teams_backgrounds/sağlık\ bilimleri.jpg');
+    background-size: cover" class="team">
+            <p class="team-title">
+                Health Sciences Team
+            </p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book
+        </div>
+
+        <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)), url('../../project_teams_backgrounds/zooloji.jpg');
+    background-size: cover" class="team">
+            <p class="team-title">
+                Zoology Team
+            </p>
+
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book
+        </div>
+    </div>
+
+    <div class="teams-div">
+        <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)), url('../../project_teams_backgrounds/bilim\ felsefesi.jpg');
+    background-size: cover" class="team">
+            <p class="team-title">
+                History and Philosophy of Science Team
+            </p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book
+        </div>
+    </div>
+
+    <link rel="stylesheet" href="../../styles/project_team.css">
+</body>
+<script src="../../autocomplete_javascript/tr/autocomplete.js"></script>
+<script src="../../autocomplete_javascript/tr/navigate_to_file.js"></script>
+
+</html>
