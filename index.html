@@ -1,248 +1,86 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="tr">
 <head>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Ana Sayfa | CALYBK </title>
-    <link rel="icon" type="image/x-icon" href="images/logo.ico">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>İyi ki Doğdun Emir!</title>
+  <link rel="stylesheet" href="style.css">
+  
 </head>
-
 <body>
+  <style>
+    body {
+  margin: 0;
+  font-family: 'Comic Sans MS', cursive;
+  background: linear-gradient(to right, #ffecd2, #fcb69f);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="styles/home_page.css">
+.container {
+  text-align: center;
+  background: white;
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
 
-    <div class="mainpage">
-        <div class="navigationbar-div" id="mainmenubar"
-            style="top:0; position: fixed;background: transparent; width: 100%; height: 90px; display: flex; justify-content: center; z-index: 1;">
-            <div style="width: 50%; height: 90px; background: transparent; justify-content: left; display: flex;">
-                <a href="index.html">
-                    <button class="home">
-                        <img src="images/logo.png" style="height: 50px; width: 50px;">
-                    </button>
-                </a>
+h1 {
+  color: #e91e63;
+  font-size: 3em;
+  margin-bottom: 20px;
+}
 
-                <div class="dropdown">
-                    <button class="dropbtn">
-                        Hakkında
-                        <i class="bi bi-chevron-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="languages/tr/about.html">CALYBK Hakkında</a>
-                        <a href="languages/tr/teams.html">Takımlar</a>
-                        <a href="languages/tr/competitions.html">Yarışmalar</a>
-                        <a href="languages/tr/projects.html">Projeler</a>
-                    </div>
-                </div>
+.message {
+  font-size: 1.5em;
+  color: #555;
+}
 
+button {
+  margin-top: 30px;
+  padding: 15px 30px;
+  font-size: 1em;
+  background-color: #ff4081;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
 
-                <div class="dropdown">
-                    <button class="dropbtn">
-                        Yayınlar
-                        <i class="bi bi-chevron-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="languages/tr/publications.html">Yayınlar</a>
-                        <a href="languages/tr/announcements.html">Duyurular</a>
-                        <a href="languages/tr/calybd.html">CALYBD</a>
-                    </div>
-                </div>
+button:hover {
+  background-color: #f50057;
+}
 
-                <a href="languages/tr/contact.html">
-                    <button class="menubar-button">
-                        İletişim
-                    </button>
-                </a>
+.balloons {
+  font-size: 2em;
+  margin-top: 40px;
+  animation: float 3s infinite ease-in-out;
+}
 
-                <a href="languages/tr/sponsor.html">
-                    <button class="menubar-button">
-                        Sponsorluk
-                    </button>
-                </a>
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
 
-                <a href="languages/tr/apply.html">
-                    <button class="menubar-button">
-                        Başvur
-                    </button>
-                </a>
+  </style>  
+  <div class="container">
+    <h1>🎉 İyi ki Doğdun Emir! 🎉</h1>
+    <p class="message">Bugün senin günün! Nice mutlu, sağlıklı, başarılarla dolu yaşlara! 🥳</p>
+    <button onclick="playMusic()">Kutlama Müzüğünü Çal 🎶</button>
+    <audio id="birthdaySong" src="raggaoktay_yeniden.mp3"></audio>
 
-            </div>
-
-            <div style="width: 50%; height: 90px; background: transparent; justify-content: right; display: flex;">
-
-                
-                <form onsubmit="goToSection(); return false;" autocomplete="off">
-                    <div class="autocomplete" style="width:300px;">
-                        <input id="keyword" class="searchbar" type="text" name="keyword" placeholder="Ara...">
-                    </div>
-
-                    <button type="submit" class="search-button">
-                        <i class="bi bi-search"></i>
-                    </button>
-                </form>
-
-                <div class="dropdown">
-                    <button class="dropbtn">
-                        Çevir
-                        <i class="bi bi-translate"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="index.html">Türkçe</a>
-                        <a href="languages/en/home_page.html">English</a>
-                        <a href="languages/de/home_page.html">Deutsch</a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <video autoplay muted loop class="myVideo">
-            <source src="videos/nature.mp4" type="video/mp4">
-        </video>
-
-        <div class="logo-div">
-            <img class="logo" src="images/logo.png" width="200" height="200">
-
-        </div>
-
-        <div class="clubname">
-            CALYBK
-        </div>
-
-        <div class="schoolname">
-            Cağaloğlu Anadolu Lisesi Yaşam Bilimleri Kulübü
-        </div>
+    <div class="balloons">
+      🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈
     </div>
-
-    <div style="width: 100%; height: 100px; background: transparent;">
-
-    </div>
-
-    <div class="second-page"
-        style="width: 100%; height: 800px; background: linear-gradient(rgba(0, 0, 0, 0.600), rgba(0, 0, 0, 0.800)), url('../images/nature-2.jpg'); background-size:cover;">
-
-        <div class="title-desc" id="block" style="font-size: 40px; font-family: 'Eina Bold'; color: green;"> Biz Kimiz?
-        </div>
-        <div class="description" id="block"
-            style="font-family: 'Eina Bold'; font-size: 18px; width: 50%; height: fit-content;">
-            CALYBK, gençlere yönelik biyoteknolojik ve biyomedikal yenilikleri yaygınlaştırmak amacıyla
-            2022 yılında kurulmuş bir öğrenci organizasyonudur. Kulübün ana hedefi, kanserin alternatif
-            tedavisi veya yapay zeka yoluyla kanser düzeyinin tahmin edilmesi gibi yeni projeler üretmek
-            ve bu gibi faaliyetlerle biyolojiyi sevdirmektir. Kulüp 4 ana departmandan oluşur. Bunlar
-            "Proje Departmanı", "Halkla İlişkiler Departmanı", "Bilgi-Teknoloji Departmanı" ve "Organizasyon
-            Departmanı"dır. Kulüp bir yönetim ekibi tarafından yönetilmektedir. Bu ekipte dört alt ekip lideri,
-            kulüp lideri ve danışman bulunmaktadır.
-
-        </div>
-
-        <a href="languages/tr/about.html" style="text-decoration: none;">
-            <button class="about-btn">
-                Hakkımızda
-            </button>
-        </a>
-
-    </div>
-
-    <div class="third-page"
-        style="width: 100%; height: 800px; background: linear-gradient(rgba(0, 0, 0, 0.600), rgba(0, 0, 0, 0.800)), url('../images/road.jpg'); background-size:cover;">
-
-        <div style="width: fit-content; height: fit-content; margin-left: 10%">
-            <a href="languages/tr/projects.html">
-                <button class="mini-box" id="fadein" style="background: linear-gradient(rgba(0, 0, 0, 0.600), rgba(0, 0, 0, 0.600)), url('../images/biogate.png'); 
-                        background-size:cover;">
-
-                    <p class="mini-box-title"> Projelerimize göz atın </p>
-                    <p class="mini-box-desc"> Projelerimize buradan göz atın veya ilerlememizi ve yolculuğumuzu takip
-                        edin</p>
-                </button>
-            </a>
-
-            <a href="languages/tr/teams.html">
-                <button class="mini-box" id="fadein" style="background: linear-gradient(rgba(0, 0, 0, 0.600), rgba(0, 0, 0, 0.600)), url('../images/teknofest.png'); 
-                        background-size:cover;">
-
-                    <p class="mini-box-title"> Takımlarımızla tanışın </p>
-                    <p class="mini-box-desc"> CALYBK, 2022'den beri faaliyette ve o zamandan beri 5'ten fazla proje alt
-                        ekibine ulaştık!</p>
-                </button>
-            </a>
-
-            <a href="languages/tr/apply.html">
-                <button class="mini-box" id="fadein" style="background: linear-gradient(rgba(0, 0, 0, 0.600), rgba(0, 0, 0, 0.600)), url('../images/t2024bio.jpeg'); 
-                        background-size:cover;">
-
-                    <p class="mini-box-title"> Kulübümüze başvurun </p>
-                    <p class="mini-box-desc"> Siz de bu kulübün bir parçası olmak istiyorsanız hemen başvurun!</p>
-                </button>
-            </a>
-        </div>
-
-        <div style="width: 100%; height: 20%; 
-            margin-top: 40px; background: transparent; justify-content: center; display: flex;
-            padding-top: 4%;">
-
-            <div class="social-media" style="color: white; justify-content: center;">
-                Sosyal Medya
-                <div style="background: transparent; width: 50px; height: 10px;"></div>
-
-
-                <a href="https://www.linkedin.com/company/calybk/" style="text-decoration: none;">
-                    <button class="social-media-button">
-                        <i class="bi bi-linkedin"></i>
-                    </button>
-                </a>
-
-                <a href="https://www.instagram.com/calybk/" style="text-decoration: none;">
-                    <button class="social-media-button">
-                        <i class="bi bi-instagram"></i>
-                    </button>
-                </a>
-
-                <a href="https://github.com/BioCally-Software" style="text-decoration: none;">
-                    <button class="social-media-button">
-                        <i class="bi bi-github"></i>
-                    </button>
-                </a>
-
-                <a href="mailto:calybk2021@gmail.com" style="text-decoration: none;">
-                    <button class="social-media-button">
-                        <i class="bi bi-envelope"></i>
-                    </button>
-                </a>
-
-                <a href="https://x.com/calybk2021" style="text-decoration: none;">
-                    <button class="social-media-button">
-                        <i class="bi bi-twitter"></i>
-                    </button>
-                </a>
-
-
-            </div>
-
-
-            <div class="social-media" style="color: white">
-                Bizimle İletişime Geçin
-
-                <div style="background: transparent; width: 50px; height: 10px;"></div>
-
-                <p style="color:white; font-size: 15px; font-family: 'Eina Regular';">
-                    <i class="bi bi-geo-alt-fill"></i> Molla Fenari Mah. Babı Ali Cad. No 1 Fatih/Istanbul
-                </p>
-
-                <div style="background: transparent; width: 50px; height: 5px;"></div>
-
-                <p style="color:white; font-size: 15px; font-family: 'Eina Regular';">
-                    <i class="bi bi-envelope"></i> calybk2021@gmail.com
-                </p>
-            </div>
-        </div>
-
-    </div>
-
-    <script src="autocomplete_javascript/tr/autocomplete.js"></script>
-    <script src="autocomplete_javascript/tr/navigate_to_file.js"></script>
+  </div>
 </body>
-
+<script>
+  function playMusic() {
+    const song = document.getElementById('birthdaySong');
+    song.play();
+  }
+</script>
 </html>
